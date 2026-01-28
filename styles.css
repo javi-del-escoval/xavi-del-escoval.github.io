@@ -1,6 +1,4 @@
 html {
-	background-color: #0C2B4E;
-	color: #ffffff;
 	font-family: "Roboto Flex", sans-serif;
 }
 body {
@@ -83,12 +81,19 @@ h1, h2, h3, h4, h5{
 	background-color: #1A3D64;
 	box-shadow: 4px 4px 8px 8px black;
 }
-.bg {
-	background-color: #0C2B4E;
-}
 .main {
-	background-color: #1A3D64;
+	background-color: #001B2E;
+	color: #fff;
+}
+.primary {
+	background-color: #0C2B4E;
+	color: #fff;
 }
 .secondary {
+	background-color: #1A3D64;
+	color: #fff;
+}
+.tertiary {
 	background-color: #1D546C;
+	color: #fff;
 }
