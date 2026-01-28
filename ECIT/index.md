@@ -1,6 +1,7 @@
 ---
 title: Proyectos ECIT
 description: 
+footer_text: Proyectos de Practica Inicial en ECIT
 ---
 [Web Scraper](#web-scraper)\
 [Generador de Html](#generadores-de-html)
