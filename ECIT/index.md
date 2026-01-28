@@ -1,31 +1,19 @@
-<script>
-	fetch('https://api.github.com/repos/javi-del-escoval/javi-del-escoval.github.io/contents/Scraper/Installers')
-	.then(res => res.json())
-	.then(files => {
-		const container = document.getElementById('scraper-installers');
-		files.forEach(file => {
-			if (file.type === 'file') {
-				const a = document.createElement('a');
-				a.href = file.download_url;
-				a.download = file.name;
-				a.textContent = file.name;
-				container.appendChild(a);
-				container.appendChild(document.createElement('br'));
-			}
-		});
-	});
-</script>
 # Proyectos ECIT
 ## Web Scraper
 ### Descarga e instalación
 Selecciona la ultima version disponible, ejecuta y sigue las instrucciones del instalador\
+[0.1.2]("./Scraper/Installers/WebScraper_0.1.2_Installer.exe")
+[0.1.3]("./Scraper/Installers/WebScraper_0.1.3_Installer.exe")
+[0.1.4]("./Scraper/Installers/WebScraper_0.1.4_Installer.exe")
+[0.1.5]("./Scraper/Installers/WebScraper_0.1.5_Installer.exe")
+[0.1.6]("./Scraper/Installers/WebScraper_0.1.6_Installer.exe")
 (Por defecto el programa se instala en Documentos)\
 [¿Que cambio en la ultima version?]("/Scraper/Changelog.md")\
-### Uso</h3>
-#### Inicio</h4>
+### Uso
+#### Inicio
 Aquí se da la instrucción al programa de realizar scraping, todo proceso de scraping genera un archivo Excel con los resultados (ver Data).\
 Cada vez que se realiza un scraping ya sea general o individual los resultados sobrescriben el archivo Excel.\
-![Tab de Inicio]("Scraper/readme/inicio.png")\
+![Tab de Inicio]("./Scraper/readme/inicio.png")\
 Con La configuración por defecto un scraping general toma aproximadamente 12 minutos\
 Desglose por plataforma:\
 - Mercado Publico: 13 segundos
@@ -37,7 +25,7 @@ Desglose por plataforma:\
 #### Data<
 En Data puedes editar el nombre del archivo en donde se guardarán los resultados, este archivo se escribe de manera relativa a donde está el instalado el programa, si el archivo no existe se creará. Si desea que sus archivos se guarden en una carpeta por separado la carpeta debe existir antes de iniciar un proceso de scraping.\
 E.g.1:\
-![Tab de Data]("Scraper/readme/data.png")/
+![Tab de Data]("./Scraper/readme/data.png")/
 Web Scraper 0.1.5/\
 ├─ _internal/\
 ├─ config.json\
@@ -47,7 +35,7 @@ $\color{blue}{\text{Scraping.xlsx*}}$\
 ├─ unins000.exe\
 └─ Web Scraper.exe\
 E.g.2:\
-![Tab de Data Ruta Invalida]("Scraper/readme/data1.png")\
+![Tab de Data Ruta Invalida]("./Scraper/readme/data1.png")\
 Web Scraper 0.1.5/\
 └─ 
 $\color{red}{\text{data/ <-- No existe}}$\
@@ -59,7 +47,7 @@ $color{red}{\text{Scraping.xlsx*}}$\
 ├─ unins000.exe\
 └─ Web Scraper.exe
 #### Keywords
-![Tab de Keywords]("Scraper/readme/keywords.png")\
+![Tab de Keywords]("./Scraper/readme/keywords.png")\
 Aquí se añade la información para filtrar los resultados, tanto las keywords como las palabras de exclusión deben estar separadas, dejando una por línea. Tambien el ticket de Mercado Publico para acceso a su [API]("https://api.mercadopublico.cl/modules/api.aspx")\\
 ### Generadores de HTML
 generador de html/\
@@ -71,12 +59,12 @@ generador de html/\
 ├─ <a href="/custom-form" download="Generador HTML/list.html">List.html</a>\
 └─ <a href="/custom-form" download="Generador HTML/modulos.txt">Módulos</a>\
 Cada Archivo txt crea una sección de módulos, si se quiere agregar o quitar un txt se debe modificar esta línea de generate_form_html.py\
-<img src="Generador HTML/archivos.png">\
+<img src="./Generador%20HTML/archivos.png">\
 El programa lee cada línea de cada txt y busca la siguiente estructura:\
 ![File Internal Structure]("Generador HTML/file_structure.png")\
 Ósea toda línea que empiece por alguna letra genera un módulo y toma esa línea como título y toda línea que empiece por “•” genera un ítem en la lista del desglose.\\
 Módulos.txt incluye los títulos de los módulos, uno por línea.\
 Es importante para la funcionalidad que el título de form.html y list.html de cada uno debe ser exactamente igual para que la funcionalidad de la lista funcione correctamente.\
-![Nombre de los Módulos Iguales]("Generador%20HTML/module_name.png")\
+![Nombre de los Módulos Iguales]("./Generador%20HTML/module_name.png")\
 Finalmente se debe copiar el contenido de cada archivo .html en la sección correspondiente de la página en WordPress.\
-![Donde Pegar Cada HTML]("Generador%20HTML/place.png")\
+![Donde Pegar Cada HTML]("./Generador%20HTML/place.png")\
