@@ -1,5 +1,6 @@
 ---
 title: Proyectos ECIT
+description: [Web Scraper](#web-scraper) y [Generador de Html](#generadores-de-html)
 ---
 ## Web Scraper
 ### Descarga e instalación
