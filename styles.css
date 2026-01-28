@@ -1,5 +1,5 @@
 html {
-	background-color: #2C353F;
+	background-color: #0C2B4E;
 	color: #ffffff;
 	font-family: "Roboto Flex", sans-serif;
 }
@@ -73,12 +73,21 @@ h1, h2, h3, h4, h5{
 	width: fit-content;
 	margin: 2vh 2vw;
 	padding: 2vh 2vw;
-	background-color: #2C353F;
+	background-color: #0C2B4E;
 	box-shadow: 4px 4px 4px 4px black;
 	border-radius: 15px;
 	margin: 2vh auto;
 }
 #scraper-installers > a:hover {
-	background-color: #2C3F49;
+	background-color: #1A3D64;
 	box-shadow: 4px 4px 8px 8px black;
+}
+.bg {
+	background-color: #0C2B4E;
+}
+.main {
+	background-color: #1A3D64;
+}
+.secondary {
+	background-color: #1D546C;
 }
