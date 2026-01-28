@@ -1,5 +1,5 @@
-# Sobre Mi
+## Sobre Mi
 about me...
-# Proyectos
-## Juegos
+## Proyectos
+### Juegos
 [Itch.io]("itch.io")
