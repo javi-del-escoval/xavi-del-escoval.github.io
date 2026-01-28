@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Xavier Del Escoval | Proyectos ECIT</title>
+		<link rel="stylesheet" href="styles.css">
+		<script>
+			fetch('https://api.github.com/repos/javi-del-escoval/javi-del-escoval.github.io/contents/Scraper/Installers')
+			.then(res => res.json())
+			.then(files => {
+				const container = document.getElementById('scraper-installers');
+				files.forEach(file => {
+					if (file.type === 'file') {
+						const a = document.createElement('a');
+						a.href = file.download_url;
+						a.download = file.name;
+						a.textContent = file.name;
+						container.appendChild(a);
+						container.appendChild(document.createElement('br'));
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Proyectos ECIT</h1>
+		<section id="projects">
+			<div>
+				<h3>Web Scraper</h3>
+				<div id="scraper-installers"></div>
+			</div>
+			<div class="separator"></div>
+			<div id="webpage-generator">
+				<h3>Generadores de HTML</h3>
+				<a href="/custom-form" download="generate-form-html.py">Generate Form</a><br>
+				<a href="/custom-form" download="Básicos.txt">Módulos Básicos</a><br>
+				<a href="/custom-form" download="Avanzados.txt">Módulos Avanzados</a><br>
+				<a href="/custom-form" download="form.html">Form.html</a><br>
+				<a href="/custom-form" download="generate-list-html.py">Generate List</a><br>
+				<a href="/custom-form" download="list.html">List.html</a><br>
+				<a href="/custom-form" download="modulos.txt">Módulos</a><br>
+			</div>
+	</body>
+</html>
+

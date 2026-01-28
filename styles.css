@@ -1,0 +1,20 @@
+html {
+	background-color: #0D1123;
+	color: #ffffff;
+}
+body {
+	max-width: 85vw;
+	text-align: center;
+	margin: auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+	align-self: center;
+	text-justify: center;
+}
+.separator {
+	min-height: 5vh;
+}
+#projects {
+	max-width: 75vw;
+	margin: auto;
+}
