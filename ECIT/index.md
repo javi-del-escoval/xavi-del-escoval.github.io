@@ -10,7 +10,7 @@ Selecciona la ultima version disponible, ejecuta y sigue las instrucciones del i
 [0.1.5](/Scraper/Installers/WebScraper_0.1.5_Installer.exe)\
 [0.1.6 [latest]](/Scraper/Installers/WebScraper_0.1.6_Installer.exe)\
 (Por defecto el programa se instala en Documentos)\
-[¿Que cambio en la ultima version?](/Scraper/Changelog.md)\
+[¿Que cambio en la ultima version?](/Scraper/Changelog.md)
 ### Uso
 #### Inicio
 Aquí se da la instrucción al programa de realizar scraping, todo proceso de scraping genera un archivo Excel con los resultados (ver Data).\
