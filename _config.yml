@@ -26,3 +26,5 @@ permalink: pretty
 exclude:
   - README.md
   - LICENSE
+
+footer_text:
