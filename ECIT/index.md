@@ -8,8 +8,6 @@ footer_text: Proyectos de Practica Inicial en ECIT
 # Web Scraper
 ## Descarga e instalación
 Selecciona la ultima version disponible, ejecuta y sigue las instrucciones del instalador\
-<a download="/Scraper/Installers/WebScraper_0.1.2_Installer.exe" class="btn">WebScraper_0.1.2_Installer</a>
-<a download="/Scraper/Installers/WebScraper_0.1.3_Installer.exe" class="btn">WebScraper_0.1.3_Installer</a>
 [0.1.2](/Scraper/Installers/WebScraper_0.1.2_Installer.exe)\
 [0.1.3](/Scraper/Installers/WebScraper_0.1.3_Installer.exe)\
 [0.1.4](/Scraper/Installers/WebScraper_0.1.4_Installer.exe)\
