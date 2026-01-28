@@ -12,7 +12,27 @@ a {
 	text-decoration: underline;
 	color: #ffffff;
 }
-h1, h2, h3, h4, h5, h6, p {
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size:2.25em;
+}
+h3 {
+	font-size:1.75em;
+}
+h4 {
+	font-size:1.25em;
+}
+h5 {
+	font-size:1m;
+}
+h6 {
+	font-size:0.8em;
+}
+h1, h2, h3, h4, h5{
+	text-decoration: underline;
 	align-self: center;
 	text-justify: center;
 }
@@ -20,8 +40,13 @@ h1, h2, h3, h4, h5, h6, p {
 	min-height: 5vh;
 }
 #projects {
-	max-width: 65vw;
+	max-width: 75vw;
 	margin: auto;
+}
+#projects img {
+	max-width:65%;
+	height: auto;
+	align-self: center;
 }
 #projects-links {
 	margin: auto;
@@ -30,7 +55,10 @@ h1, h2, h3, h4, h5, h6, p {
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 }
-#scraper {
+#scraper, #webpage-generator{
+	box-shadow: 1px 1px 5px #555 inset;
+	margin: 5% 0;
+	padding: 5px 5%;
 	justify-content: left;
 	text-align: left;
 }
