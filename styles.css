@@ -1,11 +1,16 @@
 html {
-	background-color: #0D1123;
+	background-color: #2C353F;
 	color: #ffffff;
+	font-family: "Roboto Flex", sans-serif;
 }
 body {
 	max-width: 85vw;
 	text-align: center;
 	margin: auto;
+}
+a {
+	text-decoration: underline;
+	color: #ffffff;
 }
 h1, h2, h3, h4, h5, h6, p {
 	align-self: center;
@@ -15,6 +20,37 @@ h1, h2, h3, h4, h5, h6, p {
 	min-height: 5vh;
 }
 #projects {
-	max-width: 75vw;
+	max-width: 65vw;
 	margin: auto;
+}
+#projects-links {
+	margin: auto;
+	max-width: 65vw;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+#scraper {
+	justify-content: left;
+	text-align: left;
+}
+#scraper-installers {
+	margin: auto;
+	max-width: 65vw;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+#scraper-installers > a {
+	width: fit-content;
+	margin: 2vh 2vw;
+	padding: 2vh 2vw;
+	background-color: #2C353F;
+	box-shadow: 4px 4px 4px 4px black;
+	border-radius: 15px;
+	margin: 2vh auto;
+}
+#scraper-installers > a:hover {
+	background-color: #2C3F49;
+	box-shadow: 4px 4px 8px 8px black;
 }
