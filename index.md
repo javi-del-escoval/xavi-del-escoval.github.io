@@ -1,5 +1,5 @@
-# Xavier Del Escoval
-## Programador
-## Proyectos
-### Juegos
+# Sobre Mi
+about me...
+# Proyectos
+## Juegos
 [Itch.io]("itch.io")
