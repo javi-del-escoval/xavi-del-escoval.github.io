@@ -4,8 +4,8 @@ description:
 ---
 [Web Scraper](#web-scraper)\
 [Generador de Html](#generadores-de-html)
-## Web Scraper
-### Descarga e instalación
+# Web Scraper
+## Descarga e instalación
 Selecciona la ultima version disponible, ejecuta y sigue las instrucciones del instalador\
 [0.1.2](/Scraper/Installers/WebScraper_0.1.2_Installer.exe)\
 [0.1.3](/Scraper/Installers/WebScraper_0.1.3_Installer.exe)\
@@ -14,8 +14,8 @@ Selecciona la ultima version disponible, ejecuta y sigue las instrucciones del i
 [0.1.6 [latest]](/Scraper/Installers/WebScraper_0.1.6_Installer.exe)\
 (Por defecto el programa se instala en Documentos)\
 [¿Que cambio en la ultima version?](/Scraper/Changelog.md)
-### Uso
-#### Inicio
+## Uso
+### Inicio
 Aquí se da la instrucción al programa de realizar scraping, todo proceso de scraping genera un archivo Excel con los resultados (ver Data).\
 Cada vez que se realiza un scraping ya sea general o individual los resultados sobrescriben el archivo Excel.\
 ![Tab de Inicio](./Scraper/readme/inicio.png)\
@@ -27,7 +27,7 @@ Desglose por plataforma:\
 - SERCOTEC: 9 minutos 8 segundos
 - CORFO: 48 segundos
 - CODESSER: 50 segundos
-#### Data<
+### Data<
 En Data puedes editar el nombre del archivo en donde se guardarán los resultados, este archivo se escribe de manera relativa a donde está el instalado el programa, si el archivo no existe se creará. Si desea que sus archivos se guarden en una carpeta por separado la carpeta debe existir antes de iniciar un proceso de scraping.\
 E.g.1:\
 ![Tab de Data](./Scraper/readme/data.png)/
@@ -51,10 +51,10 @@ $\color{red}{\text{Scraping.xlsx*}}$\
 ├─ unins000.dat\
 ├─ unins000.exe\
 └─ Web Scraper.exe
-#### Keywords
+### Keywords
 ![Tab de Keywords](./Scraper/readme/keywords.png)\
 Aquí se añade la información para filtrar los resultados, tanto las keywords como las palabras de exclusión deben estar separadas, dejando una por línea. Tambien el ticket de Mercado Publico para acceso a su [API](https://api.mercadopublico.cl/modules/api.aspx)\\
-### Generadores de HTML
+# Generadores de HTML
 generador de html/\
 ├─ <a href="Generador%20HTML/Básicos.txt" download="Generador%20HTML/Básicos.txt">Básicos.txt</a>\
 ├─ <a href="Generador%20HTML/Avanzados.txt" download="Generador%20HTML/Avanzados.txt">Avanzados.txt</a>\
