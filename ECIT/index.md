@@ -1,12 +1,14 @@
-# Proyectos ECIT
+---
+title: Proyectos ECIT
+---
 ## Web Scraper
 ### Descarga e instalación
 Selecciona la ultima version disponible, ejecuta y sigue las instrucciones del instalador\
-[0.1.2]("./Scraper/Installers/WebScraper_0.1.2_Installer.exe")\
-[0.1.3]("./Scraper/Installers/WebScraper_0.1.3_Installer.exe")\
-[0.1.4]("./Scraper/Installers/WebScraper_0.1.4_Installer.exe")\
-[0.1.5]("./Scraper/Installers/WebScraper_0.1.5_Installer.exe")\
-[0.1.6 [latest]]("./Scraper/Installers/WebScraper_0.1.6_Installer.exe")\
+[0.1.2](/Scraper/Installers/WebScraper_0.1.2_Installer.exe)\
+[0.1.3](/Scraper/Installers/WebScraper_0.1.3_Installer.exe)\
+[0.1.4](/Scraper/Installers/WebScraper_0.1.4_Installer.exe)\
+[0.1.5](/Scraper/Installers/WebScraper_0.1.5_Installer.exe)\
+[0.1.6 [latest]](/Scraper/Installers/WebScraper_0.1.6_Installer.exe)\
 (Por defecto el programa se instala en Documentos)\
 [¿Que cambio en la ultima version?](/Scraper/Changelog.md)\
 ### Uso
