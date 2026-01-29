@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modular Gameplay Systems Framework – Flagship Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+<main class="container">
+
+  <!-- Hero / Header -->
+  <section>
+    <h1>Modular Gameplay Systems Framework</h1>
+    <p class="muted">Flagship Project · Unity · Gameplay & Systems Engineering</p>
+
+    <div class="badges">
+      <span class="badge">Unity</span>
+      <span class="badge">C#</span>
+      <span class="badge">Gameplay Systems</span>
+      <span class="badge">Tooling</span>
+    </div>
+
+    <p>
+      A Unity-based gameplay framework focused on modular, data-driven systems. Built to scale from a small prototype to a production-ready game, with an emphasis on clean architecture, extensibility, and developer ergonomics.
+    </p>
+  </section>
+
+  <!-- TL;DR -->
+  <section class="flagship-accent">
+    <h2>TL;DR</h2>
+    <p>
+      This project explores how to design gameplay code that remains flexible under iteration pressure. Instead of focusing on visuals, it prioritizes systems that can be safely extended, tuned, and reused without rewrites.
+    </p>
+  </section>
+
+  <!-- Project Intent -->
+  <section>
+    <h2>Project Intent</h2>
+    <p>
+      Many indie projects fail not due to lack of ideas, but because early systems become rigid and expensive to change. This framework was designed to explore how to structure gameplay code so that new mechanics, abilities, and rules can be added late in development without destabilizing the project.
+    </p>
+    <p>
+      The goal was not to build a full game, but to design the foundation of one.
+    </p>
+  </section>
+
+  <!-- Core Systems -->
+  <section>
+    <h2>Core Systems</h2>
+
+    <h3>Entity & Stats System</h3>
+    <ul>
+      <li>Component-based entity model</li>
+      <li>Base stats with additive, multiplicative, and temporary modifiers</li>
+      <li>Event-driven stat updates</li>
+    </ul>
+
+    <h3>Ability System</h3>
+    <ul>
+      <li>Data-driven abilities using ScriptableObjects</li>
+      <li>Cooldowns, costs, and stacking rules</li>
+      <li>Clear separation between data, execution, and effects</li>
+    </ul>
+
+    <h3>Event & Messaging Layer</h3>
+    <ul>
+      <li>Typed, centralized event bus</li>
+      <li>Loose coupling between systems</li>
+      <li>Designed for debugging and traceability</li>
+    </ul>
+
+    <h3>Input Abstraction</h3>
+    <ul>
+      <li>Action-based input mapping</li>
+      <li>Player and AI parity</li>
+      <li>Easy rebinding and testing</li>
+    </ul>
+
+    <h3>Save / Load Pipeline</h3>
+    <ul>
+      <li>Serializable player and system state</li>
+      <li>Version-safe save format</li>
+      <li>Designed to support future expansion</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Gallery</h2>
+    <p class="muted">Early prototype visuals and system demonstrations. Visuals are intentionally minimal; the focus is on underlying systems.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">Screenshot / GIF placeholder</div>
+      <div class="gallery-item">Screenshot / GIF placeholder</div>
+      <div class="gallery-item">Screenshot / GIF placeholder</div>
+    </div>
+  </section>
+
+  <!-- Tooling -->
+  <section>
+    <h2>Tooling & Developer Experience</h2>
+
+    <h3>Runtime Debug Tools</h3>
+    <ul>
+      <li>Live stat inspection</li>
+      <li>Ability cooldown visualization</li>
+      <li>Runtime value tweaking for rapid iteration</li>
+    </ul>
+
+    <h3>Editor Utilities</h3>
+    <ul>
+      <li>ScriptableObject validation</li>
+      <li>Clear error feedback for invalid data</li>
+      <li>Consistent asset organization</li>
+    </ul>
+  </section>
+
+  <!-- Challenges & Decisions -->
+  <section>
+    <h2>Technical Challenges & Decisions</h2>
+
+    <p><strong>ScriptableObject flexibility vs. runtime safety</strong><br />
+    Solved by introducing explicit execution layers and validation rules.</p>
+
+    <p><strong>System communication without tight coupling</strong><br />
+    Addressed through an event-driven architecture using typed events.</p>
+
+    <p><strong>Scope control</strong><br />
+    Feature creep was avoided by defining strict system boundaries and avoiding visual polish.</p>
+  </section>
+
+  <!-- What It Demonstrates -->
+  <section>
+    <h2>What This Project Demonstrates</h2>
+    <ul>
+      <li>Systems thinking over feature accumulation</li>
+      <li>Production-oriented Unity architecture</li>
+      <li>Designing codebases meant to be extended by others</li>
+      <li>Clear technical decision-making and tradeoff evaluation</li>
+    </ul>
+  </section>
+
+  <!-- Future -->
+  <section>
+    <h2>Possible Extensions</h2>
+    <ul>
+      <li>AI behavior integration</li>
+      <li>Network-ready abstractions</li>
+      <li>Serialization stress testing</li>
+      <li>Team-facing documentation</li>
+    </ul>
+  </section>
+
+  <!-- Navigation -->
+  <section>
+    <a href="index.html" class="cta-link">← Back to portfolio</a>
+  </section>
+
+</main>
+
+<script>
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme');
+
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', theme);
+  toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+
+  toggle.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xavier Del Escoval — Game Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  <main class="container">
+
+    <section id="hero">
+      <h1>Xavier Del Escoval — Game Developer</h1>
+      <p>
+        Game developer with a strong background in programming, tooling, and systems-oriented thinking. I specialize in building gameplay systems, tools, and automation that support solid, maintainable game development.
+      </p>
+      <p class="muted">
+        Based in Chile · Available for freelance work
+      </p>
+      <div class="hero-links">
+        <a href="mailto:javi.delescoval@gmail.com">Contact me →</a>
+        <a href="https://github.com/javi-del-escoval" target="_blank">View GitHub →</a>
+        <a href="https://rokaynenthejackalope.itch.io">Visit Itch.io →</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a self-taught developer who has been programming since 2013, with a long-standing focus on videogames and interactive software. Over the years, I’ve worked across backend development, desktop applications, and game projects, which has given me a practical and flexible technical foundation.
+      </p>
+      <p>
+        What motivates me most in game development is building systems that feel solid under the hood: gameplay logic, tools that speed up iteration, and technical solutions that make creative work easier. I value clean structure, readable code, and solutions that hold up over time.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Game Development</h3>
+          <div class="badges">
+            <span class="badge">Unity</span>
+            <span class="badge">C#</span>
+            <span class="badge">Systems</span>
+            <span class="badge">Tools</span>
+          </div>
+          <ul>
+            <li>Unity (C#)</li>
+            <li>Gameplay systems & mechanics</li>
+            <li>Tooling & editor utilities</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">Java</span>
+            <span class="badge">C++</span>
+            <span class="badge">Tools</span>
+          </div>
+          <ul>
+            <li>Python, C#, Java, C++</li>
+            <li>Backend logic & automation</li>
+            <li>Desktop applications</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Web & Scripting</h3>
+          <div class="badges">
+            <span class="badge">HTML</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Tools</span>
+          </div>
+          <ul>
+            <li>HTML, JavaScript</li>
+            <li>Playwright, Selenium</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy">
+      <h2>Game Development Philosophy</h2>
+
+      <p><strong>TL;DR:</strong> I focus on gameplay systems, tooling, and maintainable code. I work pragmatically, communicate clearly, and prefer simple, reliable solutions over complex ones.</p>
+
+      <div class="divider"></div>
+
+      <h3>Focus</h3>
+      <p>
+        My main interest in game development is building the systems that make games work smoothly behind the scenes. I enjoy designing gameplay logic, technical foundations, and tools that allow ideas to be tested and refined efficiently.
+      </p>
+
+      <h3>How I Build Games</h3>
+      <p>
+        I approach development iteratively, starting from the core mechanic and expanding outward. I prioritize readability and maintainability, aiming to create systems that can evolve as the project grows.
+      </p>
+
+      <h3>Tools & Collaboration</h3>
+      <p>
+        I often build tools or automation to reduce repetitive work and improve iteration speed. I value clear communication and believe good collaboration is essential for successful game development.
+      </p>
+
+      <a class="cta-link" href="./flagship_project_page.html">View selected projects →</a>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>Game Developer — Nemoris Games (2021–2022)</h3>
+      <ul>
+        <li>Developed gameplay-related modules for active game projects</li>
+        <li>Built interactive Instagram filters</li>
+        <li>Collaborated with developers to integrate features into production builds</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        <strong>Ingeniería en Computación e Informática</strong><br />
+        Universidad Andrés Bello (2024 – Present)
+      </p>
+      <p>
+        <strong>Entrepreneurship Program</strong><br />
+        Heidelberg Universität
+      </p>
+    </section>
+
+    <footer>
+      <p>Contact: <a href="mailto:javi.delescoval@gmail.com">javi.delescoval@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/javi-del-escoval" target="_blank">github.com/javi-del-escoval</a></p>
+      <p>Itch.io: <a href="https://rokaynenthejackalope.itch.io" target="_blank">https://rokaynenthejackalope.itch.io</a></p>
+    </footer>
+
+  </main>
+  <script>
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme');
+
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', theme);
+  toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+
+  toggle.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+  });
+</script>
+
+</body>
+</html>
