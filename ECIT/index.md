@@ -34,8 +34,7 @@ E.g.1:\
 Web Scraper 0.1.5/\
 ├─ _internal/\
 ├─ config.json\
-├─ 
-$\color{blue}{\text{Scraping.xlsx*}}$\
+├─ <span style="color:blue">Scraping.xlsx*</span>\
 ├─ unins000.dat\
 ├─ unins000.exe\
 └─ Web Scraper.exe\
@@ -43,9 +42,9 @@ E.g.2:\
 ![Tab de Data Ruta Invalida](./Scraper/readme/data1.png)\
 Web Scraper 0.1.5/\
 └─ 
-$\color{red}{\text{data/ <-- No existe}}$\
+<span style="color:crimson">data/ <-- No existe</span>\
 &emsp;└─ 
-$\color{red}{\text{Scraping.xlsx*}}$\
+<span style="color:crimson">Scraping.xlsx*</span>\
 ├─ _internal/\
 ├─ config.json\
 ├─ unins000.dat\
@@ -53,7 +52,7 @@ $\color{red}{\text{Scraping.xlsx*}}$\
 └─ Web Scraper.exe
 ### Keywords
 ![Tab de Keywords](./Scraper/readme/keywords.png)\
-Aquí se añade la información para filtrar los resultados, tanto las keywords como las palabras de exclusión deben estar separadas, dejando una por línea. Tambien el ticket de Mercado Publico para acceso a su [API](https://api.mercadopublico.cl/modules/api.aspx)\\
+Aquí se añade la información para filtrar los resultados, tanto las keywords como las palabras de exclusión deben estar separadas, dejando una por línea. Tambien el ticket de Mercado Publico para acceso a su [API](https://api.mercadopublico.cl/modules/api.aspx)
 # Generadores de HTML
 generador de html/\
 ├─ <a href="Generador%20HTML/Básicos.txt" download="Generador%20HTML/Básicos.txt">Básicos.txt</a>\
