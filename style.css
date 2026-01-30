@@ -128,6 +128,39 @@ body {
     var(--bg);
 }
 
+/* Hero layout */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Stack on small screens */
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-media {
+    justify-self: center;
+  }
+}
+
+/* Headshot */
+.hero-headshot {
+  width: 25vw;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Hero text container */
+.hero-content {
+  max-width: 640px;
+}
+
+
 a {
   color: var(--accent-primary);
   text-decoration: none;
