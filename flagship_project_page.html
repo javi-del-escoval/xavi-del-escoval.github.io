@@ -1,187 +1,293 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modular Gameplay Systems Framework – Flagship Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  <!-- Language toggle (must be before main) -->
+  <input type="radio" name="lang" id="lang-en">
+  <input type="radio" name="lang" id="lang-es" checked>
 
-<main class="container">
+  <div class="lang-switch">
+    <label for="lang-en">EN</label>
+    <label for="lang-es">ES</label>
+  </div>
 
-  <!-- Hero / Header -->
-  <section>
-    <h1>Modular Gameplay Systems Framework</h1>
-    <p class="muted">Flagship Project · Unity · Gameplay & Systems Engineering</p>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
 
-    <div class="badges">
-      <span class="badge">Unity</span>
-      <span class="badge">C#</span>
-      <span class="badge">Gameplay Systems</span>
-      <span class="badge">Tooling</span>
-    </div>
+  <main class="container">
 
-    <p>
-      A Unity-based gameplay framework focused on modular, data-driven systems. Built to scale from a small prototype to a production-ready game, with an emphasis on clean architecture, extensibility, and developer ergonomics.
-    </p>
-  </section>
+    <!-- Hero / Header -->
+    <section>
+      <h1>
+        <span class="lang lang-en">Modular Gameplay Systems Framework</span>
+        <span class="lang lang-es"> Framework de Sistemas Modulares de Gameplay</span>
+      </h1>
+      <p class="muted">
+        <span class="lang lang-en">Flagship Project · Unity · Gameplay & Systems Engineering</span>
+        <span class="lang lang-es">Proyecto Insignia · Unity · Gameplay & Sistemas Ingeniería</span>
+      </p>
 
-  <!-- TL;DR -->
-  <section class="flagship-accent">
-    <h2>TL;DR</h2>
-    <p>
-      This project explores how to design gameplay code that remains flexible under iteration pressure. Instead of focusing on visuals, it prioritizes systems that can be safely extended, tuned, and reused without rewrites.
-    </p>
-  </section>
+      <div class="badges">
+        <span class="badge">Unity</span>
+        <span class="badge">C#</span>
+        <span class="badge">Gameplay Systems</span>
+        <span class="badge">Tooling</span>
+      </div>
 
-  <!-- Project Intent -->
-  <section>
-    <h2>Project Intent</h2>
-    <p>
-      Many indie projects fail not due to lack of ideas, but because early systems become rigid and expensive to change. This framework was designed to explore how to structure gameplay code so that new mechanics, abilities, and rules can be added late in development without destabilizing the project.
-    </p>
-    <p>
-      The goal was not to build a full game, but to design the foundation of one.
-    </p>
-  </section>
+      <p>
+        <span class="lang lang-en">A Unity-based gameplay framework focused on modular, data-driven systems. Built to scale from a small prototype to a production-ready game, with an emphasis on clean architecture, extensibility, and developer ergonomics.</span>
+        <span class="lang lang-es">Un Framework de gameplay para Unity, orientado a sistemas modulares y basado en datos. Hecho para escalar desde prototipos pequeños a juegos listo para producción, con un énfasis en una arquitectura limpia, extensible y pensada para la ergonomía del desarrollador</span>
+      </p>
+    </section>
 
-  <!-- Core Systems -->
-  <section>
-    <h2>Core Systems</h2>
+    <!-- TL;DR -->
+    <section class="flagship-accent">
+      <h2>TL;DR</h2>
+      <p>
+        <span class="lang lang-en">This project explores how to design gameplay code that remains flexible under iteration pressure. Instead of focusing on visuals, it prioritizes systems that can be safely extended, tuned, and reused without rewrites.</span>
+        <span class="lang lang-es">Este proyecto explora cómo diseñar código de gameplay que se mantenga flexible bajo la presión de la iteración. En lugar de centrarse en lo visual, prioriza sistemas que puedan extenderse, ajustarse y reutilizarse de forma segura, sin necesidad de reescrituras.</span>
+      </p>
+    </section>
 
-    <h3>Entity & Stats System</h3>
-    <ul>
-      <li>Component-based entity model</li>
-      <li>Base stats with additive, multiplicative, and temporary modifiers</li>
-      <li>Event-driven stat updates</li>
-    </ul>
+    <!-- Project Intent -->
+    <section>
+      <h2>Project Intent</h2>
+      <p>
+        <span class="lang lang-en">Many indie projects fail not due to lack of ideas, but because early systems become rigid and expensive to change. This framework was designed to explore how to structure gameplay code so that new mechanics, abilities, and rules can be added late in development without destabilizing the project.</span>
+        <span class="lang lang-es">Muchos proyectos indie fracasan no por falta de ideas, sino porque sus sistemas iniciales se vuelven rígidos y difíciles de modificar. Este framework explora cómo estructurar el código de gameplay para permitir la incorporación de nuevas mecánicas, habilidades y reglas incluso en etapas avanzadas, sin comprometer la estabilidad del proyecto.</span>
+      </p>
+      <p>
+        <span class="lang lang-en">The goal was not to build a full game, but to design the foundation of one.</span>
+        <span class="lang lang-es">El objetivo no es desarrollar un juego completo, sino que diseñar la base de uno.</span>
+      </p>
+    </section>
 
-    <h3>Ability System</h3>
-    <ul>
-      <li>Data-driven abilities using ScriptableObjects</li>
-      <li>Cooldowns, costs, and stacking rules</li>
-      <li>Clear separation between data, execution, and effects</li>
-    </ul>
+    <!-- Core Systems -->
+    <section>
+      <h2>
+        <span class="lang lang-en">Core Systems</span>
+        <span class="lang lang-es">Sistemas Principales</span>
+      </h2>
 
-    <h3>Event & Messaging Layer</h3>
-    <ul>
-      <li>Typed, centralized event bus</li>
-      <li>Loose coupling between systems</li>
-      <li>Designed for debugging and traceability</li>
-    </ul>
+      <h3>
+        <span class="lang lang-en">Entity & Stats System</span>
+        <span class="lang lang-es">Sistema de Entidades y Estadísticas</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>Component-based entity model</li></span>
+        <span class="lang lang-en"><li>Base stats with additive, multiplicative, and temporary modifiers</li></span>
+        <span class="lang lang-en"><li>Event-driven stat updates</li></span>
+        <span class="lang lang-es">Modelo de entidad basado en componentes</span>
+        <span class="lang lang-es">Estadísticas base con modificadores aditivos, multiplicativos y temporales</span>
+        <span class="lang lang-es">Actualización de estadísticas basado en eventos.</span>
+      </ul>
 
-    <h3>Input Abstraction</h3>
-    <ul>
-      <li>Action-based input mapping</li>
-      <li>Player and AI parity</li>
-      <li>Easy rebinding and testing</li>
-    </ul>
+      <h3>
+        <span class="lang lang-en">Ability System</span>
+        <span class="lang lang-es">Sistema de Habilidades</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>Data-driven abilities using ScriptableObjects</li></span>
+        <span class="lang lang-en"><li>Cooldowns, costs, and stacking rules</li></span>
+        <span class="lang lang-en"><li>Clear separation between data, execution, and effects</li></span>
+        <span class="lang lang-es">Habilidades orientadas a datos utilizando ScriptableObjects</span>
+        <span class="lang lang-es">Enfriamientos, costos y reglas de acumulación (stacking)</span>
+        <span class="lang lang-es">Separación clara entre datos, ejecución y efectos</span>
+      </ul>
 
-    <h3>Save / Load Pipeline</h3>
-    <ul>
-      <li>Serializable player and system state</li>
-      <li>Version-safe save format</li>
-      <li>Designed to support future expansion</li>
-    </ul>
-  </section>
+      <h3>
+        <span class="lang lang-en">Event & Messaging Layer</span>
+        <span class="lang lang-es">Capa de Eventos y Mensajería</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>Typed, centralized event bus</li></span>
+        <span class="lang lang-en"><li>Loose coupling between systems</li></span>
+        <span class="lang lang-en"><li>Designed for debugging and traceability</li></span>
+        <span class="lang lang-es"><li>Bus de eventos tipado y centralizado</li></span>
+        <span class="lang lang-es"><li>Bajo acoplamiento entre sistemas</li></span>
+        <span class="lang lang-es"><li>Diseñado para facilitar depuración y trazabilidad</li></span>
+      </ul>
 
-  <!-- Gallery -->
-  <section>
-    <h2>Gallery</h2>
-    <p class="muted">Early prototype visuals and system demonstrations. Visuals are intentionally minimal; the focus is on underlying systems.</p>
+      <h3>
+        <span class="lang lang-en">Input Abstraction</span>
+        <span class="lang lang-es">Abstracción de Input</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>Action-based input mapping</li></span>
+        <span class="lang lang-en"><li>Player and AI parity</li></span>
+        <span class="lang lang-en"><li>Easy rebinding and testing</li></span>
+        <span class="lang lang-es"><li>Mapeo de input basado en acciones</li></span>
+        <span class="lang lang-es"><li>Paridad entre jugador y AI</li></span>
+        <span class="lang lang-es"><li>Reasignación de controles y testing sencillos</li></span>
+      </ul>
 
-    <div class="gallery-grid">
-      <div class="gallery-item">Screenshot / GIF placeholder</div>
-      <div class="gallery-item">Screenshot / GIF placeholder</div>
-      <div class="gallery-item">Screenshot / GIF placeholder</div>
-    </div>
-  </section>
+      <h3>
+        <span class="lang lang-en">Save / Load Pipeline</span>
+        <span class="lang lang-es">Pipeline de Guardado / Carga</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>Serializable player and system state</li></span>
+        <span class="lang lang-en"><li>Version-safe save format</li></span>
+        <span class="lang lang-en"><li>Designed to support future expansion</li></span>
+        <span class="lang lang-es"><li>Estado serializable del jugador y de los sistemas</li></span>
+        <span class="lang lang-es"><li>Formato de guardado seguro frente a cambios de versión</li></span>
+        <span class="lang lang-es"><li>Diseñado para soportar futuras expansiones</li></span>
+      </ul>
+    </section>
 
-  <!-- Tooling -->
-  <section>
-    <h2>Tooling & Developer Experience</h2>
+    <!-- Gallery -->
+    <section>
+      <h2>
+        <span class="lang lang-en">Gallery</span>
+        <span class="lang lang-es">Galeria</span>
+      </h2>
+      <p class="muted">
+        <span class="lang lang-en">Early prototype visuals and system demonstrations. Visuals are intentionally minimal; the focus is on underlying systems.</span>
+        <span class="lang lang-es">Visuales de prototipos tempranos y demostraciones de sistemas. Los visuales se mantienen simples a propósito; el foco está en los sistemas internos.</span>
+      </p>
 
-    <h3>Runtime Debug Tools</h3>
-    <ul>
-      <li>Live stat inspection</li>
-      <li>Ability cooldown visualization</li>
-      <li>Runtime value tweaking for rapid iteration</li>
-    </ul>
+      <div class="gallery-grid">
+        <div class="gallery-item">Screenshot / GIF placeholder</div>
+        <div class="gallery-item">Screenshot / GIF placeholder</div>
+        <div class="gallery-item">Screenshot / GIF placeholder</div>
+      </div>
+    </section>
 
-    <h3>Editor Utilities</h3>
-    <ul>
-      <li>ScriptableObject validation</li>
-      <li>Clear error feedback for invalid data</li>
-      <li>Consistent asset organization</li>
-    </ul>
-  </section>
+    <!-- Tooling -->
+    <section>
+      <h2>
+        <span class="lang lang-en">Tooling & Developer Experience</span>
+        <span class="lang lang-es">Herramientas y Experiencia del Desarrollador</span>
+      </h2>
 
-  <!-- Challenges & Decisions -->
-  <section>
-    <h2>Technical Challenges & Decisions</h2>
+      <h3>
+        <span class="lang lang-en">Runtime Debug Tools</span>
+        <span class="lang lang-es">Herramientas de Depuración en Runtime</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>Live stat inspection</li></span>
+        <span class="lang lang-en"><li>Ability cooldown visualization</li></span>
+        <span class="lang lang-en"><li>Runtime value tweaking for rapid iteration</li></span>
+        <span class="lang lang-es">Inspección de estadísticas en tiempo real</span>
+        <span class="lang lang-es">Visualización de enfriamientos de habilidades</span>
+        <span class="lang lang-es">Ajuste de valores en runtime para iteraciones rápidas</span>
+      </ul>
 
-    <p><strong>ScriptableObject flexibility vs. runtime safety</strong><br />
-    Solved by introducing explicit execution layers and validation rules.</p>
+      <h3>
+        <span class="lang lang-en">Editor Utilities</span>
+        <span class="lang lang-es">Utilidades del Editor</span>
+      </h3>
+      <ul>
+        <span class="lang lang-en"><li>ScriptableObject validation</li></span>
+        <span class="lang lang-en"><li>Clear error feedback for invalid data</li></span>
+        <span class="lang lang-en"><li>Consistent asset organization</li></span>
+        <span class="lang lang-es"><li>Validación de ScriptableObjects</li></span>
+        <span class="lang lang-es"><li>Mensajes de error claros para datos inválidos</li></span>
+        <span class="lang lang-es"><li>Organización consistente de assets</li></span>
+      </ul>
+    </section>
 
-    <p><strong>System communication without tight coupling</strong><br />
-    Addressed through an event-driven architecture using typed events.</p>
+    <!-- Challenges & Decisions -->
+    <section>
+      <h2>
+        <span class="lang lang-en">Technical Challenges & Decisions</span>
+        <span class="lang lang-es">Desafíos Técnicos y Decisiones</span>
+      </h2>
 
-    <p><strong>Scope control</strong><br />
-    Feature creep was avoided by defining strict system boundaries and avoiding visual polish.</p>
-  </section>
+      <p>
+        <span class="lang lang-en"><strong>Flexibilidad de ScriptableObjects vs. seguridad en runtime</strong><br />
+        Resuelto mediante la introducción de capas de ejecución explícitas y reglas de validación.</span>
+        <span class="lang lang-es"><strong>Flexibilidad de ScriptableObjects vs. seguridad en runtime</strong><br />
+        Resuelto mediante la introducción de capas de ejecución explícitas y reglas de validación.</span>
+      </p>
 
-  <!-- What It Demonstrates -->
-  <section>
-    <h2>What This Project Demonstrates</h2>
-    <ul>
-      <li>Systems thinking over feature accumulation</li>
-      <li>Production-oriented Unity architecture</li>
-      <li>Designing codebases meant to be extended by others</li>
-      <li>Clear technical decision-making and tradeoff evaluation</li>
-    </ul>
-  </section>
+      <p>
+        <span class="lang lang-en"><strong>System communication without tight coupling</strong><br />
+        Addressed through an event-driven architecture using typed events.</span>
+        <span class="lang lang-es"><strong>Comunicación entre sistemas sin acoplamiento fuerte</strong><br />
+        Abordado a través de una arquitectura orientada a eventos utilizando eventos tipados.</span>
+      </p>
 
-  <!-- Future -->
-  <section>
-    <h2>Possible Extensions</h2>
-    <ul>
-      <li>AI behavior integration</li>
-      <li>Network-ready abstractions</li>
-      <li>Serialization stress testing</li>
-      <li>Team-facing documentation</li>
-    </ul>
-  </section>
+      <p>
+        <span class="lang lang-en"><strong>Scope control</strong><br />
+        Feature creep was avoided by defining strict system boundaries and avoiding visual polish.</span>
+        <span class="lang lang-es"><strong>Control de alcance</strong><br />
+        Se evitó el crecimiento descontrolado de funcionalidades definiendo límites claros entre sistemas y evitando el pulido visual.</span>
+      </p>
+    </section>
 
-  <!-- Navigation -->
-  <section>
-    <a href="index.html" class="cta-link">← Back to portfolio</a>
-  </section>
+    <!-- What It Demonstrates -->
+    <section>
+      <h2>
+        <span class="lang lang-en">What This Project Demonstrates</span>
+        <span class="lang lang-es">Qué Demuestra Este Proyecto</span>
+      </h2>
+      <ul>
+        <span class="lang lang-en"><li>Systems thinking over feature accumulation</li></span>
+        <span class="lang lang-en"><li>Production-oriented Unity architecture</li></span>
+        <span class="lang lang-en"><li>Designing codebases meant to be extended by others</li></span>
+        <span class="lang lang-en"><li>Clear technical decision-making and tradeoff evaluation</li></span>
+        <span class="lang lang-es"><li>Pensamiento orientado a sistemas por sobre la acumulación de funcionalidades</li></span>
+        <span class="lang lang-es"><li>Arquitectura de Unity orientada a producción</li></span>
+        <span class="lang lang-es"><li>Diseño de bases de código pensadas para ser extendidas por otros</li></span>
+        <span class="lang lang-es"><li>Toma de decisiones técnicas clara y evaluación de trade-offs</li></span>
+      </ul>
+    </section>
 
-</main>
+    <!-- Future -->
+    <section>
+      <h2>
+        <span class="lang lang-en">Possible Extensions</span>
+        <span class="lang lang-es">Posibles Extensiones</span>
+      </h2>
+      <ul>
+        <span class="lang lang-en"><li>AI behavior integration</li></span>
+        <span class="lang lang-en"><li>Network-ready abstractions</li></span>
+        <span class="lang lang-en"><li>Serialization stress testing</li></span>
+        <span class="lang lang-en"><li>Team-facing documentation</li></span>
+        <span class="lang lang-es"><li>Integración de comportamientos de IA</li></span>
+        <span class="lang lang-es"><li>Abstracciones preparadas para networking</li></span>
+        <span class="lang lang-es"><li>Pruebas de estrés del sistema de serialización</li></span>
+        <span class="lang lang-es"><li>Documentación orientada a equipos</li></span>
+      </ul>
+    </section>
 
-<script>
-  const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
+    <!-- Navigation -->
+    <section>
+      <a href="index.html" class="cta-link">
+        <span class="lang lang-en">← Back to portfolio</span>
+        <span class="lang lang-es">← Volver al portafolio</span>
+      </a>
+    </section>
 
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const savedTheme = localStorage.getItem('theme');
+  </main>
 
-  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-  root.setAttribute('data-theme', theme);
-  toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
 
-  toggle.addEventListener('click', () => {
-    const isDark = root.getAttribute('data-theme') === 'dark';
-    const next = isDark ? 'light' : 'dark';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
 
-    root.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    toggle.textContent = next === 'dark' ? '☀️' : '🌙';
-  });
-</script>
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', theme);
+    toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
 
-</body>
+    toggle.addEventListener('click', () => {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
+
+  </body>
 </html>
