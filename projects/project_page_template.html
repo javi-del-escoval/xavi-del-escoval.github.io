@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title — Xavier Del Escoval</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  <main class="container">
+
+    <!-- PROJECT HERO -->
+    <section id="project-hero">
+      <p class="muted">Game Development · Tools & Systems</p>
+      <h1>Project Title</h1>
+      <p>
+        One-sentence description explaining what the project is and why it exists.
+      </p>
+      <div class="badges">
+        <span class="badge">Unity</span>
+        <span class="badge">C#</span>
+        <span class="badge">Systems</span>
+        <span class="badge">Tooling</span>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        Brief explanation of the project context. What problem it solves, who it was built for, and what constraints existed (time, scope, team size).
+      </p>
+
+      <p><strong>TL;DR:</strong> A concise summary highlighting the core challenge and your contribution.</p>
+    </section>
+
+    <!-- RESPONSIBILITIES -->
+    <section id="responsibilities">
+      <h2>Responsibilities</h2>
+      <ul>
+        <li>Designed and implemented core gameplay or system architecture</li>
+        <li>Developed internal tools to speed up iteration</li>
+        <li>Collaborated with designers / artists (if applicable)</li>
+      </ul>
+    </section>
+
+    <!-- TECHNICAL BREAKDOWN -->
+    <section id="technical">
+      <h2>Technical Breakdown</h2>
+
+      <h3>Architecture & Systems</h3>
+      <p>
+        Describe the main systems involved, how they communicate, and why this structure was chosen.
+      </p>
+
+      <h3>Key Challenges</h3>
+      <p>
+        Explain the main technical or design challenges and how you approached solving them.
+      </p>
+
+      <h3>Tooling & Workflow</h3>
+      <p>
+        Mention any custom tools, automation, or editor extensions you created to improve productivity.
+      </p>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section id="outcomes">
+      <h2>Outcome & Learnings</h2>
+      <ul>
+        <li>What worked particularly well</li>
+        <li>What you would improve in a future iteration</li>
+        <li>Key technical or design lessons learned</li>
+      </ul>
+    </section>
+
+    <!-- NAVIGATION -->
+    <section id="project-nav">
+      <a class="cta-link" href="index.html">← Back to portfolio</a>
+    </section>
+
+  </main>
+  <script>
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme');
+
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', theme);
+  toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+
+  toggle.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+  });
+</script>
+
+</body>
+</html>
