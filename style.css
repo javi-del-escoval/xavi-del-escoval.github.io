@@ -274,7 +274,7 @@ a:hover {
 }
 
 section {
-  margin-bottom: 96px;
+  margin-bottom: 10vh;
   padding: 64px 48px;
   border-radius: 20px;
   background: var(--surface);
@@ -422,7 +422,7 @@ footer p {
   color: var(--text-secondary);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   h1 {
     font-size: 30px;
   }
