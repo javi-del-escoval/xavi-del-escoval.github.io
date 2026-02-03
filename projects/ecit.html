@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../style.css">
 	<script>
-			fetch('https://api.github.com/repos/javi-del-escoval/ecit-practica-verano-2026/tree/main/Installers')
+			fetch('https://api.github.com/repos/javi-del-escoval/ecit-practica-verano-2026/contents/Installers')
 			.then(res => res.json())
 			.then(files => {
 				const container = document.getElementById('scraper-installers');
@@ -131,11 +131,11 @@
 			<span class="lang lang-en">Here is where you filter the results, add keywords for inclusion and exclusion, one per line. Also here you need to add your Mercado Publico <a href="https://api.mercadopublico.cl/modules/api.aspx">API</a> Ticket.<br><br></span>
 			<span class="lang lang-es">Aquí se añade la información para filtrar los resultados, tanto las keywords como las palabras de exclusión deben estar separadas, dejando una por línea. Tambien el ticket de Mercado Publico para acceso a su <a href="https://api.mercadopublico.cl/modules/api.aspx">API</a><br><br></span>
 		</section>
+		<h1>
+			<span class="lang lang-en">HTML Generator</span>
+			<span class="lang lang-es">Generadores de HTML</span>
+		</h1>
 		<section id="generador-html">
-			<h2>
-				<span class="lang lang-en">HTML Generator</span>
-				<span class="lang lang-es">Generadores de HTML</span>
-			</h2>
 			generador de html/<br>
 			├─ <a href="/custom-form" download="https://raw.githubusercontent.com/javi-del-escoval/ecit-practica-verano-2026/refs/heads/main/Generador%20HTML/Básicos.txt">Básicos.txt</a><br>
 			├─ <a href="/custom-form" download="https://raw.githubusercontent.com/javi-del-escoval/ecit-practica-verano-2026/refs/heads/main/Generador%20HTML/Avanzados.txt">Avanzados.txt</a><br>
@@ -147,13 +147,13 @@
 			<span class="lang lang-en">Each .txt File creates a section of modules, if you want to add or remove a .txt you'll need to modify this line of code in generate_form_html.py<br><br></span>
 			<span class="lang lang-es">Cada Archivo .txt crea una sección de módulos, si se quiere agregar o quitar un .txt se debe modificar esta línea de generate_form_html.py<br><br></span>
 			<img src="https://raw.githubusercontent.com/javi-del-escoval/ecit-practica-verano-2026/refs/heads/main/Generador%20HTML/archivos.png"><br><br>
-			<span class="lang lang-en">The programm reads every line and looks for the following structure:<br><br></span>
-			<span class="lang lang-es">El programa lee cada línea de cada txt y busca la siguiente estructura:<br><br></span>
+			<span class="lang lang-en">The programm reads every line and looks for the following structure:<br></span>
+			<span class="lang lang-es">El programa lee cada línea de cada txt y busca la siguiente estructura:<br></span>
 			<img src="https://raw.githubusercontent.com/javi-del-escoval/ecit-practica-verano-2026/refs/heads/main/Generador%20HTML/file_structure.png"><br><br>
-			<span class="lang lang-en">Any line that starts by a letter generates a module and any line after that starting with “•” generates an item in the details list.<br><br><br><br>
+			<span class="lang lang-en">Any line that starts by a letter generates a module and any line after that starting with “•” generates an item in the details list.<br><br>
 			Módulos.txt has the title of every module, one per line.<br><br>
 			It's important for it to work that the title in form.html and list.html of each module is exactly the same so that the selected list works correctly.<br><br></span>
-			<span class="lang lang-es">Ósea toda línea que empiece por alguna letra genera un módulo y toma esa línea como título y toda línea que empiece por “•” genera un ítem en la lista del desglose.<br><br><br><br>
+			<span class="lang lang-es">Ósea toda línea que empiece por alguna letra genera un módulo y toma esa línea como título y toda línea que empiece por “•” genera un ítem en la lista del desglose.<br><br>
 			Módulos.txt incluye los títulos de los módulos, uno por línea.<br><br>
 			Es importante para la funcionalidad que el título de form.html y list.html de cada uno debe ser exactamente igual para que la lista de selccionados funcione correctamente.<br><br></span>
 			<img src="https://raw.githubusercontent.com/javi-del-escoval/ecit-practica-verano-2026/refs/heads/main/Generador%20HTML/module_name.png"><br><br>

@@ -386,6 +386,10 @@ li {
   color: var(--text-secondary);
 }
 
+img {
+  max-width: 80%;
+}
+
 .divider {
   height: 1px;
   background: linear-gradient(
@@ -481,10 +485,6 @@ footer p {
   background: var(--surface);
   border-color: color-mix(in srgb, var(--accent-secondary) 35%, transparent);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
-}
-
-section {
-  padding: 48px 24px;
 }
 
 .container {
