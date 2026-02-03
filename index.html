@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Xavier Del Escoval — Game Developer</title>
+	<title>Xavier Del Escoval - Game Developer</title>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -14,16 +14,16 @@
 <input type="radio" name="lang" id="lang-es" checked>
 
 <div class="lang-switch">
+	<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
 	<label for="lang-en">EN</label>
 	<label for="lang-es">ES</label>
 </div>
 
-<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
 
 <nav class="navbar">
 	<div class="nav-inner">
 		<span class="nav-name"><a style="color: var(--text);" href="">Xavier Del Escoval</a></span>
-
+		<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
 		<ul class="nav-links">
 			<span class="lang lang-en"><li><a href="#about">About</a></li></span>
 			<span class="lang lang-en"><li><a href="#skills">Skills</a></li></span>
@@ -43,10 +43,17 @@
 
 	<!-- Hero -->
 	<section id="hero" class="hero">
+		<div class="hero-media">
+			<img
+				src="headshot.png"
+				alt="Xavier Del Escoval, Game Developer"
+				class="hero-headshot"
+			/>
+		</div>
 		<div>
 			<h1>
-				<span class="lang lang-en">Xavier Del Escoval — Game Developer</span>
-				<span class="lang lang-es">Xavier Del Escoval — Desarrollador de Videojuegos</span>
+				<span class="lang lang-en">Xavier Del Escoval - Game Developer</span>
+				<span class="lang lang-es">Xavier Del Escoval - Desarrollador de Videojuegos</span>
 			</h1>
 			<p class="hero-content">
 				<span class="lang lang-en">
@@ -70,13 +77,6 @@
 					<span class="lang lang-es">Contáctame →</span>
 				</a>
 			</div>
-		</div>
-		<div class="hero-media">
-			<img
-				src="headshot.png"
-				alt="Xavier Del Escoval, Game Developer"
-				class="hero-headshot"
-			/>
 		</div>
 	</section>
 
@@ -165,11 +165,12 @@
 				<h3>Web & Scripting</h3>
 				<div class="badges">
 					<span class="badge">HTML</span>
-					<span class="badge">JavaScript</span>
+					<span class="badge">PHP</span>
+					<span class="badge">Python</span>
 				</div>
 				<ul>
-					<li>HTML, JavaScript</li>
-					<li>Playwright, Selenium</li>
+					<li>HTML, PHP</li>
+					<li>Python Playwright, Selenium</li>
 				</ul>
 			</div>
 		</div>
@@ -253,8 +254,8 @@
 		</h2>
 
 		<h3>
-			<span class="lang lang-en">Game Developer — Nemoris Games (2022-2023)</span>
-			<span class="lang lang-es">Desarrollador — Nemoris Games (2022–2023)</span>
+			<span class="lang lang-en">Game Developer - Nemoris Games (2022-2023)</span>
+			<span class="lang lang-es">Desarrollador - Nemoris Games (2022–2023)</span>
 		</h3>
 
 		<ul>
@@ -322,6 +323,13 @@
 		toggle.textContent = next === 'dark' ? '☀️' : '🌙';
 	});
 </script>
+<script>
+  const nav = document.querySelector('.navbar');
+  const toggleNav = document.querySelector('.nav-toggle');
 
+  toggleNav.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
