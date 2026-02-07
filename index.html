@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Xavier Del Escoval - Desarrollador Backend</title>
-	<link rel="icon" type="image/x-icon" href="icon.png">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<meta name="description" content="Portafolio de Xavier Del Escoval, Ingeniero de software / Desarrollador backend enfocado en construir sistemas rápidos y robustos y herramientas internas, con experiencia en el apoyo a equipos complejos y multidisciplinarios. Disponible para proyectos freelance desde Chile.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Xavier Del Escoval | Backend Developer (Chile)</title>
+    <meta name="description" content="Portafolio de Xavier Del Escoval. Ingeniero de software / Backend Developer enfocado en sistemas robustos, automatización, APIs y herramientas internas. Disponible para trabajo remoto y freelance desde Chile." />
+
+    <link rel="canonical" href="https://xavier-codes.pages.dev/" />
+
+    <link rel="icon" href="/icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Xavier Del Escoval | Backend Developer" />
+    <meta property="og:description" content="Backend systems, APIs, automation y herramientas internas. Portafolio y experiencia." />
+    <meta property="og:url" content="https://xavier-codes.pages.dev/" />
+    <meta property="og:image" content="https://xavier-codes.pages.dev/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Xavier Del Escoval | Backend Developer" />
+    <meta name="twitter:description" content="Backend systems, APIs, automation y herramientas internas." />
+    <meta name="twitter:image" content="https://xavier-codes.pages.dev/og-image.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xavier Del Escoval",
+      "jobTitle": "Backend Developer",
+      "url": "https://xavier-codes.pages.dev/",
+      "image": "https://xavier-codes.pages.dev/headshot.png",
+      "email": "javi.delescoval@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CL"
+      },
+      "knowsAbout": ["Backend Development", "APIs", "Automation", "Python", "SQL", "Systems Design"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/style.css" />
 </head>
+
 <body>
 
 <!-- Language toggle (must be before main) -->
@@ -16,241 +55,241 @@
 <input type="radio" name="lang" id="lang-es" checked>
 
 <div class="lang-switch">
-	<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-	<label for="lang-en">EN</label>
-	<label for="lang-es">ES</label>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  <label for="lang-en">EN</label>
+  <label for="lang-es">ES</label>
 </div>
 
 
 <nav class="navbar">
-	<div class="nav-inner">
-		<span class="nav-name"><a style="color: var(--text);" href="">Xavier Del Escoval</a></span>
-		<button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-		<ul class="nav-links">
-			<span class="lang lang-en"><li><a href="#about">About</a></li></span>
-			<span class="lang lang-en"><li><a href="#skills">Skills</a></li></span>
-			<span class="lang lang-en"><li><a href="#projects">Projects</a></li></span>
-			<span class="lang lang-en"><li><a href="#philosophy">Philosophy</a></li></span>
-			<span class="lang lang-en"><li><a href="#experience">Experience</a></li></span>
-			<span class="lang lang-es"><li><a href="#about">Sobre Mi</a></li></span>
-			<span class="lang lang-es"><li><a href="#skills">Habilidades</a></li></span>
-			<span class="lang lang-es"><li><a href="#projects">Proyectos</a></li></span>
-			<span class="lang lang-es"><li><a href="#philosophy">Filosofia</a></li></span>
-			<span class="lang lang-es"><li><a href="#experience">Experiencia</a></li></span>
-		</ul>
-	</div>
+  <div class="nav-inner">
+    <span class="nav-name"><a style="color: var(--text);" href="">Xavier Del Escoval</a></span>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <span class="lang lang-en"><li><a href="#about">About</a></li></span>
+      <span class="lang lang-en"><li><a href="#skills">Skills</a></li></span>
+      <span class="lang lang-en"><li><a href="#projects">Projects</a></li></span>
+      <span class="lang lang-en"><li><a href="#philosophy">Philosophy</a></li></span>
+      <span class="lang lang-en"><li><a href="#experience">Experience</a></li></span>
+      <span class="lang lang-es"><li><a href="#about">Sobre Mi</a></li></span>
+      <span class="lang lang-es"><li><a href="#skills">Habilidades</a></li></span>
+      <span class="lang lang-es"><li><a href="#projects">Proyectos</a></li></span>
+      <span class="lang lang-es"><li><a href="#philosophy">Filosofia</a></li></span>
+      <span class="lang lang-es"><li><a href="#experience">Experiencia</a></li></span>
+    </ul>
+  </div>
 </nav>
 
 <main class="container">
 
-	<!-- Hero -->
-	<section id="hero" class="hero">
-		<div class="hero-media">
-			<img src="headshot.png" alt="Xavier Del Escoval, Backend Developer" class="hero-headshot"/>
-		</div>
-		<div>
-			<h1>
-				<span class="lang lang-en">Xavier Del Escoval - Backend Developer</span>
-				<span class="lang lang-es">Xavier Del Escoval - Desarrollador de Backend</span>
-			</h1>
-			<p class="hero-content">
-				<span class="lang lang-en">Software Engineer / Backend Developer focused on building fast, robust backend systems and internal tools, with experience supporting complex, multidisciplinary teams.</span>
-				<span class="lang lang-es">Ingeniero de software / Desarrollador backend enfocado en construir sistemas rápidos y robustos y herramientas internas, con experiencia en el apoyo a equipos complejos y multidisciplinarios.</span>
-			</p>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-media">
+      <img src="headshot.png" alt="Xavier Del Escoval, Backend Developer" class="hero-headshot"/>
+    </div>
+    <div>
+      <h1>
+        <span class="lang lang-en">Xavier Del Escoval - Backend Developer</span>
+        <span class="lang lang-es">Xavier Del Escoval - Desarrollador de Backend</span>
+      </h1>
+      <p class="hero-content">
+        <span class="lang lang-en">Software Engineer / Backend Developer focused on building fast, robust backend systems and internal tools, with experience supporting complex, multidisciplinary teams.</span>
+        <span class="lang lang-es">Ingeniero de software / Desarrollador backend enfocado en construir sistemas rápidos y robustos y herramientas internas, con experiencia en el apoyo a equipos complejos y multidisciplinarios.</span>
+      </p>
 
-			<p class="muted">
-				<span class="lang lang-en">Based in Chile · Available for freelance work</span>
-				<span class="lang lang-es">Chile · Disponible para trabajo freelance</span>
-			</p>
+      <p class="muted">
+        <span class="lang lang-en">Based in Chile · Available for freelance work</span>
+        <span class="lang lang-es">Chile · Disponible para trabajo freelance</span>
+      </p>
 
-			<div class="hero-links">
-				<a href="mailto:javi.delescoval@gmail.com">
-					<span class="lang lang-en">Contact me →</span>
-					<span class="lang lang-es">Contáctame →</span>
-				</a>
-			</div>
-		</div>
-	</section>
+      <div class="hero-links">
+        <a href="mailto:javi.delescoval@gmail.com">
+          <span class="lang lang-en">Contact me →</span>
+          <span class="lang lang-es">Contáctame →</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-	<!-- About -->
-	<section id="about">
-		<h2>
-			<span class="lang lang-en">About Me</span>
-			<span class="lang lang-es">Sobre Mí</span>
-		</h2>
+  <!-- About -->
+  <section id="about">
+    <h2>
+      <span class="lang lang-en">About Me</span>
+      <span class="lang lang-es">Sobre Mí</span>
+    </h2>
 
-		<p>
-			<span class="lang lang-en">I am a Software Engineer / Backend Developer based in Chile, currently completing my studies while working in an engineering consulting environment. I focus on building backend systems and internal tools that improve reliability, reduce manual work, and support teams operating under real constraints.\n\nMy background includes automation, data processing, and tool-building across engineering and game development contexts. I am currently targeting entry-level and junior backend/software engineering roles.</span>
-			<span class="lang lang-es">Soy Ingeniero de Software/Desarrollador Backend y resido en Chile. Actualmente estoy cursando mis estudios mientras trabajo en un entorno de consultoría de ingeniería. Me centro en el desarrollo de sistemas backend y herramientas internas que mejoran la confiabilidad, reducen el trabajo manual y brindan soporte a equipos que operan bajo restricciones reales. Mi experiencia incluye automatización, procesamiento de datos y desarrollo de herramientas en contextos de ingeniería y desarrollo de videojuegos. Actualmente busco puestos de ingeniería backend/software de nivel inicial y junior.</span>
-		</p>
-	</section>
+    <p>
+      <span class="lang lang-en">I am a Software Engineer / Backend Developer based in Chile, currently completing my studies while working in an engineering consulting environment. I focus on building backend systems and internal tools that improve reliability, reduce manual work, and support teams operating under real constraints.\n\nMy background includes automation, data processing, and tool-building across engineering and game development contexts. I am currently targeting entry-level and junior backend/software engineering roles.</span>
+      <span class="lang lang-es">Soy Ingeniero de Software/Desarrollador Backend y resido en Chile. Actualmente estoy cursando mis estudios mientras trabajo en un entorno de consultoría de ingeniería. Me centro en el desarrollo de sistemas backend y herramientas internas que mejoran la confiabilidad, reducen el trabajo manual y brindan soporte a equipos que operan bajo restricciones reales. Mi experiencia incluye automatización, procesamiento de datos y desarrollo de herramientas en contextos de ingeniería y desarrollo de videojuegos. Actualmente busco puestos de ingeniería backend/software de nivel inicial y junior.</span>
+    </p>
+  </section>
 
-	<!-- Skills -->
-	<section id="skills">
-		<h2>
-			<span class="lang lang-en">Skills</span>
-			<span class="lang lang-es">Habilidades</span>
-		</h2>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>
+      <span class="lang lang-en">Skills</span>
+      <span class="lang lang-es">Habilidades</span>
+    </h2>
 
-		<div class="skills-grid">
-			<div>
-				<h3>
-					<span class="lang lang-en">Core</span>
-					<span class="lang lang-es">Principal</span>
-				</h3>
-				<ul>
-					<span class="lang lang-en">
-						<li>Backend development</li>
-						<li>Internal tools & automation</li>
-						<li>API design</li>
-						<li>Data processing & validation</li>
-						<li>Systems design</li>
-					</span>
-					<span class="lang lang-es">
-						<li>Desarrollo backend</li>
-						<li>Herramientas y Automatizacion Interna</li>
-						<li>diseño de APIs</li>
-						<li>validación y procesamiento de data</li>
-						<li>diseño de sistemas</li>
-					</span>
-				</ul>
-			</div>
-			<div>
-				<h3>
-					<span class="lang lang-en">Primary Stack</span>
-					<span class="lang lang-es">Stack Principal</span>
-				</h3>
-				<ul>
-					<li>Python, C#, Java</li>
-					<li>SQL (PostgreSQL)</li>
-					<li>SQL (MySQL)</li>
-					<li>REST APIs</li>
-					<li>Git</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+    <div class="skills-grid">
+      <div>
+        <h3>
+          <span class="lang lang-en">Core</span>
+          <span class="lang lang-es">Principal</span>
+        </h3>
+        <ul>
+          <span class="lang lang-en">
+            <li>Backend development</li>
+            <li>Internal tools & automation</li>
+            <li>API design</li>
+            <li>Data processing & validation</li>
+            <li>Systems design</li>
+          </span>
+          <span class="lang lang-es">
+            <li>Desarrollo backend</li>
+            <li>Herramientas y Automatizacion Interna</li>
+            <li>diseño de APIs</li>
+            <li>validación y procesamiento de data</li>
+            <li>diseño de sistemas</li>
+          </span>
+        </ul>
+      </div>
+      <div>
+        <h3>
+          <span class="lang lang-en">Primary Stack</span>
+          <span class="lang lang-es">Stack Principal</span>
+        </h3>
+        <ul>
+          <li>Python, C#, Java</li>
+          <li>SQL (PostgreSQL)</li>
+          <li>SQL (MySQL)</li>
+          <li>REST APIs</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-	<!-- Projects -->
-	<section id="projects">
-		<h2>
-			<span class="lang lang-en">Projects</span>
-			<span class="lang lang-es">Proyectos</span>
-		</h2>
-		<!--<div class="gallery-grid">
-			<a href="projects/ggj_2026.html"><div class="gallery-item"><img src="projects/GGJ_2026_HAUNTED.gif" /></div></a>
-			<a href="#"><div class="gallery-item">Screenshot / GIF placeholder</div></a>
-			<a href="#"><div class="gallery-item">Screenshot / GIF placeholder</div></a>
-			<a href="#"><div class="gallery-item">Screenshot / GIF placeholder</div></a>
-		</div>-->
-		<a class="cta-link" href="./flagship_project_page.html">
-			<span class="lang lang-en">View selected projects →</span>
-			<span class="lang lang-es">Ver proyecto destacado →</span>
-		</a>
-	</section>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>
+      <span class="lang lang-en">Projects</span>
+      <span class="lang lang-es">Proyectos</span>
+    </h2>
+    <!--<div class="gallery-grid">
+      <a href="projects/ggj_2026.html"><div class="gallery-item"><img src="projects/GGJ_2026_HAUNTED.gif" /></div></a>
+      <a href="#"><div class="gallery-item">Screenshot / GIF placeholder</div></a>
+      <a href="#"><div class="gallery-item">Screenshot / GIF placeholder</div></a>
+      <a href="#"><div class="gallery-item">Screenshot / GIF placeholder</div></a>
+    </div>-->
+    <a class="cta-link" href="./flagship_project_page.html">
+      <span class="lang lang-en">View selected projects →</span>
+      <span class="lang lang-es">Ver proyecto destacado →</span>
+    </a>
+  </section>
 
-	<!-- Philosophy -->
-	<section id="philosophy">
-		<h2>
-			<span class="lang lang-en">Development Philosophy</span>
-			<span class="lang lang-es">Filosofía de Desarrollo</span>
-		</h2>
-		<ul>
-			<span class="lang lang-en">
-				<li>I prioritize clarity and maintainability, especially in systems that will be extended by others.</li>
-				<li>I treat validation, error handling, and observability as core features.</li>
-				<li>I prefer small, tailored tools over generic solutions when the problem is specific.</li>
-				<li>I aim to deliver quickly while keeping systems stable under failure and change.</li>
-				<li>I document tradeoffs and assumptions so decisions stay understandable over time.</li>
-				<li>I build automation to reduce operational friction, not to add complexity.</li>
-			</span>
-			<span class="lang lang-es">
-				<li>Priorizo claridad y mantenibilidad, especialmente en sistemas que otros deberán extender.</li>
-				<li>Trato la validación, el manejo de errores y la observabilidad como funciones centrales.</li>
-				<li>Prefiero herramientas pequeñas y a medida antes que soluciones genéricas cuando el problema es específico.</li>
-				<li>Busco entregar rápido manteniendo estabilidad ante fallos y cambios.</li>
-				<li>Documento tradeoffs y supuestos para que las decisiones sigan siendo entendibles con el tiempo.</li>
-				<li>Construyo automatización para reducir fricción operativa, no para agregar complejidad.</li>
-			</span>
-		</ul>
-	</section>
+  <!-- Philosophy -->
+  <section id="philosophy">
+    <h2>
+      <span class="lang lang-en">Development Philosophy</span>
+      <span class="lang lang-es">Filosofía de Desarrollo</span>
+    </h2>
+    <ul>
+      <span class="lang lang-en">
+        <li>I prioritize clarity and maintainability, especially in systems that will be extended by others.</li>
+        <li>I treat validation, error handling, and observability as core features.</li>
+        <li>I prefer small, tailored tools over generic solutions when the problem is specific.</li>
+        <li>I aim to deliver quickly while keeping systems stable under failure and change.</li>
+        <li>I document tradeoffs and assumptions so decisions stay understandable over time.</li>
+        <li>I build automation to reduce operational friction, not to add complexity.</li>
+      </span>
+      <span class="lang lang-es">
+        <li>Priorizo claridad y mantenibilidad, especialmente en sistemas que otros deberán extender.</li>
+        <li>Trato la validación, el manejo de errores y la observabilidad como funciones centrales.</li>
+        <li>Prefiero herramientas pequeñas y a medida antes que soluciones genéricas cuando el problema es específico.</li>
+        <li>Busco entregar rápido manteniendo estabilidad ante fallos y cambios.</li>
+        <li>Documento tradeoffs y supuestos para que las decisiones sigan siendo entendibles con el tiempo.</li>
+        <li>Construyo automatización para reducir fricción operativa, no para agregar complejidad.</li>
+      </span>
+    </ul>
+  </section>
 
-	<!-- Experience -->
-	<section id="experience">
-		<h2>
-			<span class="lang lang-en">Experience</span>
-			<span class="lang lang-es">Experiencia</span>
-		</h2>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>
+      <span class="lang lang-en">Experience</span>
+      <span class="lang lang-es">Experiencia</span>
+    </h2>
 
-		<h3>
-			<span class="lang lang-en">Game Developer - Nemoris Games (2022-2023)</span>
-			<span class="lang lang-es">Desarrollador - Nemoris Games (2022–2023)</span>
-		</h3>
+    <h3>
+      <span class="lang lang-en">Game Developer - Nemoris Games (2022-2023)</span>
+      <span class="lang lang-es">Desarrollador - Nemoris Games (2022–2023)</span>
+    </h3>
 
-		<ul>
-			<li>
-				<span class="lang lang-en">Developed gameplay-related modules</span>
-				<span class="lang lang-es">Desarrollé módulos relacionados con gameplay</span>
-			</li>
-			<li>
-				<span class="lang lang-en">Built interactive Instagram filters</span>
-				<span class="lang lang-es">Construí filtros interactivos de Instagram</span>
-			</li>
-			<li>
-				<span class="lang lang-en">Collaborated with production teams</span>
-				<span class="lang lang-es">Colaboré con el equipo de producción</span>
-			</li>
-		</ul>
-	</section>
+    <ul>
+      <li>
+        <span class="lang lang-en">Developed gameplay-related modules</span>
+        <span class="lang lang-es">Desarrollé módulos relacionados con gameplay</span>
+      </li>
+      <li>
+        <span class="lang lang-en">Built interactive Instagram filters</span>
+        <span class="lang lang-es">Construí filtros interactivos de Instagram</span>
+      </li>
+      <li>
+        <span class="lang lang-en">Collaborated with production teams</span>
+        <span class="lang lang-es">Colaboré con el equipo de producción</span>
+      </li>
+    </ul>
+  </section>
 
-	<!-- Education -->
-	<section id="education">
-		<h2>
-			<span class="lang lang-en">Education</span>
-			<span class="lang lang-es">Educación</span>
-		</h2>
+  <!-- Education -->
+  <section id="education">
+    <h2>
+      <span class="lang lang-en">Education</span>
+      <span class="lang lang-es">Educación</span>
+    </h2>
 
-		<p>
-			<strong>Ingeniería en Computación e Informática</strong><br />
-			Universidad Andrés Bello (2024 – Present)
-		</p>
+    <p>
+      <strong>Ingeniería en Computación e Informática</strong><br />
+      Universidad Andrés Bello (2024 – Present)
+    </p>
 
-		<p>
-			<strong>Entrepreneurship Program</strong><br />
-			Heidelberg Universität
-		</p>
-	</section>
+    <p>
+      <strong>Entrepreneurship Program</strong><br />
+      Heidelberg Universität
+    </p>
+  </section>
 
-	<footer>
-		<p>
-			<span class="lang lang-en">Contact:</span>
-			<span class="lang lang-es">Contacto:</span>
-			<a href="mailto:javi.delescoval@gmail.com">javi.delescoval@gmail.com</a>
-		</p>
-	</footer>
+  <footer>
+    <p>
+      <span class="lang lang-en">Contact:</span>
+      <span class="lang lang-es">Contacto:</span>
+      <a href="mailto:javi.delescoval@gmail.com">javi.delescoval@gmail.com</a>
+    </p>
+  </footer>
 
 </main>
 
 <!-- Theme toggle script (unchanged) -->
 <script>
-	const root = document.documentElement;
-	const toggle = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
 
-	const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme');
 
-	const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-	root.setAttribute('data-theme', theme);
-	toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', theme);
+  toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
 
-	toggle.addEventListener('click', () => {
-		const isDark = root.getAttribute('data-theme') === 'dark';
-		const next = isDark ? 'light' : 'dark';
+  toggle.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
 
-		root.setAttribute('data-theme', next);
-		localStorage.setItem('theme', next);
-		toggle.textContent = next === 'dark' ? '☀️' : '🌙';
-	});
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+  });
 </script>
 <script>
   const nav = document.querySelector('.navbar');
