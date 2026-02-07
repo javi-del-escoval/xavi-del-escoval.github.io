@@ -50,7 +50,6 @@
 .tag-list a {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
   border: 1px solid rgba(120, 120, 120, 0.25);
@@ -65,7 +64,9 @@
   border-color: rgba(120, 120, 120, 0.45);
 }
 
-/* Projects list */
+/* =========================
+   Projects grid (1/2/3 cols)
+   ========================= */
 .projects-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -73,12 +74,25 @@
   margin: 0 0 2.5rem 0;
 }
 
-/* Card */
+@media (min-width: 720px) {
+  .projects-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .projects-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* =========================
+   Project card
+   ========================= */
 .project-card {
-  border-radius: 20px;
+  border-radius: 18px;
   border: 1px solid rgba(120, 120, 120, 0.18);
   background: rgba(120, 120, 120, 0.04);
-  overflow: hidden;
   transition: transform 140ms ease, border-color 140ms ease;
 }
 
@@ -87,62 +101,70 @@
   border-color: rgba(120, 120, 120, 0.35);
 }
 
-/* Make entire card clickable */
+/* Whole card clickable */
 .project-card-link {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: block;
   text-decoration: none;
   color: inherit;
 }
 
-/* Media */
+/* =========================
+   Media (compact + centered)
+   ========================= */
 .project-card-media {
   width: 100%;
-  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden; /* only media is clipped, not the whole card */
 }
 
 .project-card-media img {
   width: 100%;
   height: auto;
   display: block;
+
+  /* compact and consistent */
   aspect-ratio: 16 / 9;
+
   object-fit: cover;
+  object-position: center;
 }
 
-/* Body */
+/* =========================
+   Body (no stretching)
+   ========================= */
 .project-card-body {
-  padding: 1.1rem 1.1rem 1.2rem 1.1rem;
+  padding: 1rem 1rem 1.05rem 1rem;
 }
 
 .project-card-title {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   letter-spacing: -0.01em;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.45rem 0;
+  line-height: 1.25;
 }
 
 .project-card-desc {
-  margin: 0 0 0.9rem 0;
-  color: var(--text-secondary);
+  margin: 0 0 0.85rem 0;
+  color: var(--muted);
   line-height: 1.55;
-  max-width: 80ch;
+  font-size: 0.95rem;
 }
 
 /* Meta list */
 .project-meta {
   list-style: none;
   padding: 0;
-  margin: 0 0 0.9rem 0;
+  margin: 0 0 0.85rem 0;
   display: grid;
   gap: 0.35rem;
-  color: var(--text);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .project-meta strong {
   font-weight: 600;
 }
 
-/* Tags inside card */
+/* Tags */
 .project-tags {
   list-style: none;
   padding: 0;
@@ -153,36 +175,20 @@
 }
 
 .project-tags li {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
   border: 1px solid rgba(120, 120, 120, 0.22);
-  color: var(--text-secondary);
+  color: var(--muted);
 }
 
-/* Responsive: side-by-side on larger screens */
-@media (min-width: 860px) {
-  .project-card-link {
-    grid-template-columns: 320px 1fr;
-  }
-
-  .project-card-media img {
-    height: 100%;
-    aspect-ratio: auto;
-  }
-
-  .project-card-body {
-    padding: 1.2rem 1.25rem;
-  }
-}
-
-/* Small screens spacing */
+/* Small screens */
 @media (max-width: 480px) {
   .page-header h1 {
     font-size: 1.7rem;
   }
 
   .project-card-body {
-    padding: 1rem;
+    padding: 0.95rem;
   }
 }
