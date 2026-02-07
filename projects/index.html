@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Proyectos | Xavier Del Escoval</title>
+  <meta name="description" content="Listado de proyectos de Xavier Del Escoval: backend, automatización, herramientas internas y desarrollo de videojuegos." />
+
+  <!-- Canonical (ajusta el dominio real) -->
+  <link rel="canonical" href="https://xavier-codes.pages.dev/projects/" />
+
+  <link rel="icon" href="/icon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Proyectos | Xavier Del Escoval" />
+  <meta property="og:description" content="Proyectos de backend, automatización y herramientas internas." />
+  <meta property="og:url" content="https://xavier-codes.pages.dev/projects/" />
+  <meta property="og:image" content="https://xavier-codes.pages.dev/og-image.png" />
+</head>
+
+<body>
+
+  <!-- Language toggle (must be before main) -->
+  <input type="radio" name="lang" id="lang-en">
+  <input type="radio" name="lang" id="lang-es" checked>
+
+  <div class="lang-switch">
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <label for="lang-en">EN</label>
+    <label for="lang-es">ES</label>
+  </div>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="nav-name">
+        <a style="color: var(--text);" href="../">Xavier Del Escoval</a>
+      </span>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links">
+      <span class="lang lang-en"><li><a href="../#about">About</a></li></span>
+      <span class="lang lang-en"><li><a href="../#skills">Skills</a></li></span>
+      <span class="lang lang-en"><li><a href="./">Projects</a></li></span>
+      <span class="lang lang-en"><li><a href="../#philosophy">Philosophy</a></li></span>
+      <span class="lang lang-en"><li><a href="../#experience">Experience</a></li></span>
+      <span class="lang lang-es"><li><a href="../#about">Sobre Mi</a></li></span>
+      <span class="lang lang-es"><li><a href="../#skills">Habilidades</a></li></span>
+      <span class="lang lang-es"><li><a href="./">Proyectos</a></li></span>
+      <span class="lang lang-es"><li><a href="../#philosophy">Filosofia</a></li></span>
+      <span class="lang lang-es"><li><a href="../#experience">Experiencia</a></li></span>
+    </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="page-header">
+      <h1>Proyectos</h1>
+      <p class="muted">
+        Selección de proyectos. Incluye backend, automatización, tooling y game dev.
+      </p>
+    </header>
+
+    <!-- Filtros opcionales (puedes eliminar esta sección si quieres ultra minimal) -->
+    <section aria-label="Filtros de proyectos" class="project-filters">
+      <ul class="tag-list">
+        <li><a href="#backend">Backend</a></li>
+        <li><a href="#automation">Automatización</a></li>
+        <li><a href="#tooling">Tooling</a></li>
+        <li><a href="#gamedev">Game Dev</a></li>
+      </ul>
+    </section>
+
+    <!-- Lista de proyectos -->
+    <section aria-label="Listado de proyectos" class="projects-list">
+
+      <!-- Proyecto -->
+      <article class="project-card" id="backend">
+        <a class="project-card-link" href="#">
+          <div class="project-card-media">
+            <img
+              src="./placeholder-backend.png"
+              alt="Proyecto backend: API y procesamiento de datos"
+              width="640"
+              height="360"
+              loading="lazy"
+            />
+          </div>
+        </a>
+        <div class="project-card-body">
+          <h2 class="project-card-title">API de reportes y validación de datos</h2>
+
+          <p class="project-card-desc">
+            Sistema backend para generar reportes, validar entradas, y automatizar procesos internos. Diseñado para ser extensible.
+          </p>
+
+          <ul class="project-meta">
+            <li><strong>Rol:</strong> Backend Developer</li>
+            <li><strong>Stack:</strong> Python, PostgreSQL</li>
+            <li><strong>Tipo:</strong> Internal tooling</li>
+          </ul>
+
+          <ul class="badges">
+            <span class="badge">Backend</span>
+            <span class="badge">Automation</span>
+            <span class="badge">Data</span>
+          </ul>
+        </div>
+      </article>
+
+      <div class="divider"></div>
+
+      <!-- Proyecto -->
+      <article class="project-card" id="gamedev">
+        <a class="project-card-link" href="./ggj_2026.html">
+          <div class="project-banner">
+            <img
+              src="./GGJ_2026_HAUNTED.gif"
+              alt="Gameplay de Haunted (Global Game Jam 2026)"
+              width="640"
+              height="360"
+              loading="lazy"
+            />
+          </div>
+        </a>
+        <div class="project-card-body">
+          <h2 class="project-card-title">Haunted — Global Game Jam 2026</h2>
+
+          <p class="project-card-desc">
+            Proyecto de game dev en equipo. Enfoque en implementación de sistemas, gameplay modules y soporte técnico.
+          </p>
+
+          <ul class="project-meta">
+            <li><strong>Rol:</strong> Developer</li>
+            <li><strong>Stack:</strong> Unity, C#</li>
+            <li><strong>Año:</strong> 2026</li>
+          </ul>
+
+          <div class="badges">
+            <span class="badge">Game Dev</span>
+            <span class="badge">Systems</span>
+            <span class="badge">Team</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>
+        <a href="/">← Volver al inicio</a>
+      </p>
+    </footer>
+
+  </main>
+  <!-- Theme toggle script -->
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', theme);
+    toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+
+    toggle.addEventListener('click', () => {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
+  <script>
+    const nav = document.querySelector('.navbar');
+    const toggleNav = document.querySelector('.nav-toggle');
+
+    if (toggleNav) {
+      toggleNav.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
