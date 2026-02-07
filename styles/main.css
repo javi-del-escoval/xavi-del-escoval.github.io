@@ -135,7 +135,7 @@
   font-size: 0.75rem;
   cursor: pointer;
   border-radius: 999px;
-  color: var(--muted);
+  color: var(--text-secondary);
   background-color: var(--surface);
 }
 #lang-es, #lang-en { display:none; }
@@ -240,7 +240,7 @@
 .nav-links a {
   font-size: 0.85rem;
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   padding: 0 1rem;
 
   transition: color 0.15s ease;

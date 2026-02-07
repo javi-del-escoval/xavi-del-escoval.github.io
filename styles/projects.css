@@ -1,6 +1,21 @@
 /* =========================
    Projects page
    ========================= */
+@value --bg from './main.css';
+@value --surface from './main.css';
+@value --surface-alt from './main.css';
+@value --text-primary from './main.css';
+@value --text-secondary from './main.css';
+@value --accent-primary from './main.css';
+@value --accent-secondary from './main.css';
+@value --accent-tertiary from './main.css';
+@value --accent-soft from './main.css';
+@value --banner-overlay-light from './main.css';
+@value --banner-overlay-dark from './main.css';
+@value --banner-fallback-light from './main.css';
+@value --banner-fallback-dark from './main.css';
+@value --banner-overlay from './main.css';
+@value --banner-fallback from './main.css';
 
 /* Page header */
 .page-header {
@@ -107,7 +122,7 @@
 
 .project-card-desc {
   margin: 0 0 0.9rem 0;
-  color: var(--muted);
+  color: var(--text-secondary);
   line-height: 1.55;
   max-width: 80ch;
 }
@@ -142,7 +157,7 @@
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
   border: 1px solid rgba(120, 120, 120, 0.22);
-  color: var(--muted);
+  color: var(--text-secondary);
 }
 
 /* Responsive: side-by-side on larger screens */
