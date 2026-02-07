@@ -1,304 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> – Flagship Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Data Unification – Flagship Project</title>
+		<link rel="icon" type="image/x-icon" href="icon.png">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Language toggle (must be before main) -->
+		<input type="radio" name="lang" id="lang-en">
+		<input type="radio" name="lang" id="lang-es" checked>
 
-  <!-- Language toggle (must be before main) -->
-  <input type="radio" name="lang" id="lang-en">
-  <input type="radio" name="lang" id="lang-es" checked>
+		<div class="lang-switch">
+			<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+			<label for="lang-en">EN</label>
+			<label for="lang-es">ES</label>
+		</div>
+		<main class="container">
 
-  <div class="lang-switch">
-    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-    <label for="lang-en">EN</label>
-    <label for="lang-es">ES</label>
-  </div>
-  <main class="container">
+			<!-- Hero / Header -->
+			<section>
+				<h1>
+					<span class="lang lang-en">Data Ingestion, Validation & Reporting</span>
+					<span class="lang lang-es">Ingreso, Validación y Reporte de Datos</span>
+				</h1>
+				<p class="muted">
+					<span class="lang lang-en">Flagship Project · Python · Backend & Systems Engineering</span>
+					<span class="lang lang-es">Proyecto Insignia · Python · Backend & Ingeniería de Sistemas </span>
+				</p>
+				<div class="badges">
+					<span class="badge">Python</span>
+					<span class="badge">REST API</span>
+					<span class="badge">SQL</span>
+					<span class="badge">System</span>
+				</div>
+				<p>
+					<span class="lang lang-en">Backend system that ingests data from multiple sources, validates and normalizes it, and exposes reliable reports and exports for decision-making.</span>
+					<span class="lang lang-es">Sistema de backend que recibe datos de distintas fuentes, los valida, y normaliza, y expone reportes confiables para la toma de desiciones.</span>
+				</p>
+			</section>
 
-    <!-- Hero / Header -->
-    <section>
-      <h1>
-        <span class="lang lang-en">Data Ingestion, Validation & Reporting</span>
-        <span class="lang lang-es">Ingreso, Validación y Reporte de Datos</span>
-      </h1>
-      <p class="muted">
-        <span class="lang lang-en">Flagship Project · Python · Backend & Systems Engineering</span>
-        <span class="lang lang-es">Proyecto Insignia · Python · Backend & Ingeniería de Sistemas </span>
-      </p>
+			<!-- Project Intent -->
+			<section class="flagship-accent">
+				<h2>
+					<span class="lang lang-en">What Problem it Solves</span>
+					<span class="lang lang-es">Que Problema Resuelve</span>
+				</h2>
+				<p>
+					<span class="lang lang-en">Teams receive data from multiple inconsistent sources (manual uploads, APIs, scripts), resulting in errors, duplicated effort, and unreliable reporting.</span>
+					<span class="lang lang-es">Los equipos reciben datos de muchas fuentes inconsistentes (carga manuel, APIs, scripts), lo que resulta en errores, esfuerzos duplicados y reportes poco confiables</span>
+				</p>
+			</section>
 
-      <div class="badges">
-        <span class="badge">Python</span>
-        <span class="badge">Backend</span>
-        <span class="badge">Systems</span>
-      </div>
+			<!-- Core Systems -->
+			<section>
+				<h2>
+					<span class="lang lang-en">Core Capabilities</span>
+					<span class="lang lang-es">Capacidades Principales</span>
+				</h2>
 
-      <p>
-        <span class="lang lang-en">Backend system that ingests data from multiple sources, validates and normalizes it, and exposes reliable reports and exports for decision-making.</span>
-        <span class="lang lang-es">Sistema de backend que recibe datos de distintas fuentes, los valida, y normaliza, y expone reportes confiables para la toma de desiciones.</span>
-      </p>
-    </section>
+				<h3>
+					<span class="lang lang-en">Data Ingestion</span>
+					<span class="lang lang-es">Ingreso de Datos</span>
+				</h3>
+				<ul>
+					<li class="lang lang-en">CSV file upload</li>
+					<li class="lang lang-en">External API</li>
+					<li class="lang lang-en">Manual input</li>
+					<li class="lang lang-es">Carga de archivo CSV</li>
+					<li class="lang lang-es">API externa</li>
+					<li class="lang lang-es">Entrada manual</li>
+				</ul>
+				<h3>
+					<span class="lang lang-en">Normalization & Validation</span>
+					<span class="lang lang-es">Normalización & Validación</span>
+				</h3>
+				<ul>
+					<li class="lang lang-en">Schema enforcement</li>
+					<li class="lang lang-en">Required fields</li>
+					<li class="lang lang-en">Type validation</li>
+					<li class="lang lang-en">Business rules</li>
+					<li class="lang lang-es">Forzado de esquema</li>
+					<li class="lang lang-es">Campos requeridos</li>
+					<li class="lang lang-es">Validación de tipo</li>
+					<li class="lang lang-es">Reglas de negocio</li>
+				</ul>
 
-    <!-- TL;DR -->
-    <section class="flagship-accent">
-      <h2>TL;DR</h2>
-      <p>
-        <span class="lang lang-en">This project explores how to design gameplay code that remains flexible under iteration pressure. Instead of focusing on visuals, it prioritizes systems that can be safely extended, tuned, and reused without rewrites.</span>
-        <span class="lang lang-es">Este proyecto explora cómo diseñar código de gameplay que se mantenga flexible bajo la presión de la iteración. En lugar de centrarse en lo visual, prioriza sistemas que puedan extenderse, ajustarse y reutilizarse de forma segura, sin necesidad de reescrituras.</span>
-      </p>
-    </section>
+				<h3>
+					<span class="lang lang-en">Error Handling</span>
+					<span class="lang lang-es">Manejo de Errores</span>
+				</h3>
+				<ul>
+					<li class="lang lang-en">Partial failures</li>
+					<li class="lang lang-en">Retry strategy</li>
+					<li class="lang lang-en">Logging of rejected records</li>
+					<li class="lang lang-en">Clear failure reasons</li>
+					<li class="lang lang-es">Fallos parciales</li>
+					<li class="lang lang-es">Estrategia de reintento</li>
+					<li class="lang lang-es">Registro de entradas rechazadas</li>
+					<li class="lang lang-es">Definir las causas del fallo</li>
+				</ul>
 
-    <!-- Project Intent -->
-    <section>
-      <h2>
-        <span class="lang lang-en">What Problem it Solves</span>
-        <span class="lang lang-es">Que Problema Resuelve</span>
-      </h2>
-      <p>
-        <span class="lang lang-en">Teams receive data from multiple inconsistent sources (manual uploads, APIs, scripts), resulting in errors, duplicated effort, and unreliable reporting.</span>
-        <span class="lang lang-es">Los equipos reciben datos de muchas fuentes inconsistentes (carga manuel, APIs, scripts), lo que resulta en errores, esfuerzos duplicados y reportes poco confiables</span>
-      </p>
-    </section>
+				<h3>
+					<span class="lang lang-en">Processing Pipeline</span>
+					<span class="lang lang-es">Pipeline de Procesado</span>
+				</h3>
+				<ul>
+					<span class="lang lang-en">
+						<li>Queue or background jobs</li>
+						<li>Idempotency</li>
+						<li>Deterministic outcomes</li>
+					</span>
+					<span class="lang lang-es">
+						<li>Trabajos en cola o en segundo plano</li>
+						<li>Idempotencia</li>
+						<li>Resultados deterministas</li>
+					</span>
+				</ul>
 
-    <!-- Core Systems -->
-    <section>
-      <h2>
-        <span class="lang lang-en">Core Capabilities</span>
-        <span class="lang lang-es">Capacidades Principales</span>
-      </h2>
+				<h3>
+					<span class="lang lang-en">Reporting / Export</span>
+					<span class="lang lang-es">Reporte / Exportación</span>
+				</h3>
+				<ul>
+					<li class="lang lang-en">Aggregated results</li>
+					<li class="lang lang-en">Filtered views</li>
+					<li class="lang lang-en">CSV / JSON export</li>
+					<li class="lang lang-en">Simple API endpoints</li>
+					<li class="lang lang-es">Resultados agregados</li>
+					<li class="lang lang-es">Vistas filtradas</li>
+					<li class="lang lang-es">Exportación CSV/JSON</li>
+					<li class="lang lang-es">Puntos finales de API simples</li>
+				</ul>
+			</section>
 
-      <h3>
-        <span class="lang lang-en">Data Ingestion</span>
-        <span class="lang lang-es">Ingreso de Datos</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>CSV file upload</li></span>
-        <span class="lang lang-en"><li>External API</li></span>
-        <span class="lang lang-en"><li>Manual input</li></span>
-        <span class="lang lang-es"><li>Carga de archivo CSV</li></span>
-        <span class="lang lang-es"><li>API externa</li></span>
-        <span class="lang lang-es"><li>Entrada manual</li></span>
-      </ul>
+			<!-- Gallery -->
+			<section>
+				<h2>
+					<span class="lang lang-en">Gallery</span>
+					<span class="lang lang-es">Galeria</span>
+				</h2>
+				<!--<p class="muted">
+					<span class="lang lang-en">Early prototype visuals and system demonstrations. Visuals are intentionally minimal; the focus is on underlying systems.</span>
+					<span class="lang lang-es">Visuales de prototipos tempranos y demostraciones de sistemas. Los visuales se mantienen simples a propósito; el foco está en los sistemas internos.</span>-->
+				</p>
+				<div class="gallery-grid">
+					<div class="gallery-item">Screenshot / GIF placeholder</div>
+					<div class="gallery-item">Screenshot / GIF placeholder</div>
+					<div class="gallery-item">Screenshot / GIF placeholder</div>
+				</div>
+			</section>
 
-      <h3>
-        <span class="lang lang-en">Ability System</span>
-        <span class="lang lang-es">Sistema de Habilidades</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>Data-driven abilities using ScriptableObjects</li></span>
-        <span class="lang lang-en"><li>Cooldowns, costs, and stacking rules</li></span>
-        <span class="lang lang-en"><li>Clear separation between data, execution, and effects</li></span>
-        <span class="lang lang-es"><li>Habilidades orientadas a datos utilizando ScriptableObjects</li></span>
-        <span class="lang lang-es"><li>Enfriamientos, costos y reglas de acumulación (stacking)</li></span>
-        <span class="lang lang-es"><li>Separación clara entre datos, ejecución y efectos</li></span>
-      </ul>
+			<!-- Challenges & Decisions -->
+			<section>
+				<h2>
+					<span class="lang lang-en">Technical Challenges & Decisions</span>
+					<span class="lang lang-es">Desafíos Técnicos y Decisiones</span>
+				</h2>
+				<p>
+					<span class="lang lang-en"></span>
+					<span class="lang lang-es"></span>
+				</p>
+			</section>
 
-      <h3>
-        <span class="lang lang-en">Normalization & Validation</span>
-        <span class="lang lang-es">Normalización & Validación</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>Schema enforcement</li></span>
-        <span class="lang lang-en"><li>Required fields</li></span>
-        <span class="lang lang-en"><li>Type validation</li></span>
-        <span class="lang lang-en"><li>Business rules</li></span>
-        <span class="lang lang-es"><li>Forzado de esquema</li></span>
-        <span class="lang lang-es"><li>Campos requeridos</li></span>
-        <span class="lang lang-es"><li>Validación de tipo</li></span>
-        <span class="lang lang-es"><li>Reglas de negocio</li></span>
-      </ul>
+			<!-- Future -->
+			<section>
+				<h2>
+					<span class="lang lang-en">Possible Extensions</span>
+					<span class="lang lang-es">Posibles Extensiones</span>
+				</h2>
+				<ul>
+					<li class="lang lang-en"></li>
+					<li class="lang lang-es"></li>
+				</ul>
+			</section>
 
-      <h3>
-        <span class="lang lang-en">Error Handling</span>
-        <span class="lang lang-es">Manejo de Errores</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>Partial failures</li></span>
-        <span class="lang lang-en"><li>Retry strategy</li></span>
-        <span class="lang lang-en"><li>Logging of rejected records</li></span>
-        <span class="lang lang-en"><li>Clear failure reasons</li></span>
-        <span class="lang lang-es"><li>Fallos parciales</li></span>
-        <span class="lang lang-es"><li>Estrategia de reintento</li></span>
-        <span class="lang lang-es"><li>Registro de entradas rechazadas</li></span>
-        <span class="lang lang-es"><li>Definir las causas del fallo</li></span>
-      </ul>
+			<!-- Navigation -->
+			<section>
+				<a href="index.html" class="cta-link">
+					<span class="lang lang-en">← Back to portfolio</span>
+					<span class="lang lang-es">← Volver al portafolio</span>
+				</a>
+			</section>
+		</main>
+		<script>
+			const root = document.documentElement;
+			const toggle = document.getElementById('theme-toggle');
 
-      <h3>
-        <span class="lang lang-en">Processing Pipeline</span>
-        <span class="lang lang-es">Pipeline de Procesado</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li></li></span>
-        <span class="lang lang-es"><li></li></span>
-      </ul>
+			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const savedTheme = localStorage.getItem('theme');
 
-      <h3>
-        <span class="lang lang-en">Reporting / Export</span>
-        <span class="lang lang-es">Reporte / Exportación</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>Aggregated results</li></span>
-        <span class="lang lang-en"><li>Filtered views</li></span>
-        <span class="lang lang-en"><li>CSV / JSON export</li></span>
-        <span class="lang lang-en"><li>Simple API endpoints</li></span>
-        <span class="lang lang-es"><li>Resultados agregados</li></span>
-        <span class="lang lang-es"><li>Vistas filtradas</li></span>
-        <span class="lang lang-es"><li>Exportación CSV/JSON</li></span>
-        <span class="lang lang-es"><li>Puntos finales de API simples</li></span>
-      </ul>
-    </section>
+			const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+			root.setAttribute('data-theme', theme);
+			toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
 
-    <!-- Gallery -->
-    <section>
-      <h2>
-        <span class="lang lang-en">Gallery</span>
-        <span class="lang lang-es">Galeria</span>
-      </h2>
-      <p class="muted">
-        <span class="lang lang-en">Early prototype visuals and system demonstrations. Visuals are intentionally minimal; the focus is on underlying systems.</span>
-        <span class="lang lang-es">Visuales de prototipos tempranos y demostraciones de sistemas. Los visuales se mantienen simples a propósito; el foco está en los sistemas internos.</span>
-      </p>
+			toggle.addEventListener('click', () => {
+				const isDark = root.getAttribute('data-theme') === 'dark';
+				const next = isDark ? 'light' : 'dark';
 
-      <div class="gallery-grid">
-        <div class="gallery-item">Screenshot / GIF placeholder</div>
-        <div class="gallery-item">Screenshot / GIF placeholder</div>
-        <div class="gallery-item">Screenshot / GIF placeholder</div>
-      </div>
-    </section>
-
-    <!-- Tooling -->
-    <section>
-      <h2>
-        <span class="lang lang-en">Tooling & Developer Experience</span>
-        <span class="lang lang-es">Herramientas y Experiencia del Desarrollador</span>
-      </h2>
-
-      <h3>
-        <span class="lang lang-en">Runtime Debug Tools</span>
-        <span class="lang lang-es">Herramientas de Depuración en Runtime</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>Live stat inspection</li></span>
-        <span class="lang lang-en"><li>Ability cooldown visualization</li></span>
-        <span class="lang lang-en"><li>Runtime value tweaking for rapid iteration</li></span>
-        <span class="lang lang-es">Inspección de estadísticas en tiempo real</span>
-        <span class="lang lang-es">Visualización de enfriamientos de habilidades</span>
-        <span class="lang lang-es">Ajuste de valores en runtime para iteraciones rápidas</span>
-      </ul>
-
-      <h3>
-        <span class="lang lang-en">Editor Utilities</span>
-        <span class="lang lang-es">Utilidades del Editor</span>
-      </h3>
-      <ul>
-        <span class="lang lang-en"><li>ScriptableObject validation</li></span>
-        <span class="lang lang-en"><li>Clear error feedback for invalid data</li></span>
-        <span class="lang lang-en"><li>Consistent asset organization</li></span>
-        <span class="lang lang-es"><li>Validación de ScriptableObjects</li></span>
-        <span class="lang lang-es"><li>Mensajes de error claros para datos inválidos</li></span>
-        <span class="lang lang-es"><li>Organización consistente de assets</li></span>
-      </ul>
-    </section>
-
-    <!-- Challenges & Decisions -->
-    <section>
-      <h2>
-        <span class="lang lang-en">Technical Challenges & Decisions</span>
-        <span class="lang lang-es">Desafíos Técnicos y Decisiones</span>
-      </h2>
-
-      <p>
-        <span class="lang lang-en"><strong>Flexibilidad de ScriptableObjects vs. seguridad en runtime</strong><br />
-        Resuelto mediante la introducción de capas de ejecución explícitas y reglas de validación.</span>
-        <span class="lang lang-es"><strong>Flexibilidad de ScriptableObjects vs. seguridad en runtime</strong><br />
-        Resuelto mediante la introducción de capas de ejecución explícitas y reglas de validación.</span>
-      </p>
-
-      <p>
-        <span class="lang lang-en"><strong>System communication without tight coupling</strong><br />
-        Addressed through an event-driven architecture using typed events.</span>
-        <span class="lang lang-es"><strong>Comunicación entre sistemas sin acoplamiento fuerte</strong><br />
-        Abordado a través de una arquitectura orientada a eventos utilizando eventos tipados.</span>
-      </p>
-
-      <p>
-        <span class="lang lang-en"><strong>Scope control</strong><br />
-        Feature creep was avoided by defining strict system boundaries and avoiding visual polish.</span>
-        <span class="lang lang-es"><strong>Control de alcance</strong><br />
-        Se evitó el crecimiento descontrolado de funcionalidades definiendo límites claros entre sistemas y evitando el pulido visual.</span>
-      </p>
-    </section>
-
-    <!-- What It Demonstrates -->
-    <section>
-      <h2>
-        <span class="lang lang-en">What This Project Demonstrates</span>
-        <span class="lang lang-es">Qué Demuestra Este Proyecto</span>
-      </h2>
-      <ul>
-        <span class="lang lang-en"><li>Systems thinking over feature accumulation</li></span>
-        <span class="lang lang-en"><li>Production-oriented Unity architecture</li></span>
-        <span class="lang lang-en"><li>Designing codebases meant to be extended by others</li></span>
-        <span class="lang lang-en"><li>Clear technical decision-making and tradeoff evaluation</li></span>
-        <span class="lang lang-es"><li>Pensamiento orientado a sistemas por sobre la acumulación de funcionalidades</li></span>
-        <span class="lang lang-es"><li>Arquitectura de Unity orientada a producción</li></span>
-        <span class="lang lang-es"><li>Diseño de bases de código pensadas para ser extendidas por otros</li></span>
-        <span class="lang lang-es"><li>Toma de decisiones técnicas clara y evaluación de trade-offs</li></span>
-      </ul>
-    </section>
-
-    <!-- Future -->
-    <section>
-      <h2>
-        <span class="lang lang-en">Possible Extensions</span>
-        <span class="lang lang-es">Posibles Extensiones</span>
-      </h2>
-      <ul>
-        <span class="lang lang-en"><li>AI behavior integration</li></span>
-        <span class="lang lang-en"><li>Network-ready abstractions</li></span>
-        <span class="lang lang-en"><li>Serialization stress testing</li></span>
-        <span class="lang lang-en"><li>Team-facing documentation</li></span>
-        <span class="lang lang-es"><li>Integración de comportamientos de IA</li></span>
-        <span class="lang lang-es"><li>Abstracciones preparadas para networking</li></span>
-        <span class="lang lang-es"><li>Pruebas de estrés del sistema de serialización</li></span>
-        <span class="lang lang-es"><li>Documentación orientada a equipos</li></span>
-      </ul>
-    </section>
-
-    <!-- Navigation -->
-    <section>
-      <a href="index.html" class="cta-link">
-        <span class="lang lang-en">← Back to portfolio</span>
-        <span class="lang lang-es">← Volver al portafolio</span>
-      </a>
-    </section>
-
-  </main>
-
-  <script>
-    const root = document.documentElement;
-    const toggle = document.getElementById('theme-toggle');
-
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = localStorage.getItem('theme');
-
-    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-    root.setAttribute('data-theme', theme);
-    toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-
-    toggle.addEventListener('click', () => {
-      const isDark = root.getAttribute('data-theme') === 'dark';
-      const next = isDark ? 'light' : 'dark';
-
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      toggle.textContent = next === 'dark' ? '☀️' : '🌙';
-    });
-  </script>
-
-  </body>
+				root.setAttribute('data-theme', next);
+				localStorage.setItem('theme', next);
+				toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+			});
+		</script>
+	</body>
 </html>
